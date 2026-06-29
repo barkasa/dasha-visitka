@@ -29,3 +29,43 @@ body {
   font-weight: 300;
   overflow-x: hidden;
 }
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  /* Hero */
+  .hero-content h1 {
+    font-size: 3.5rem !important;
+  }
+
+  /* About */
+  .about-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Projects */
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  /* Gallery carousel */
+  .carousel-item {
+    flex: 0 0 85% !important;
+  }
+
+  /* Contacts */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  /* Footer */
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 24px !important;
+  }
+
+  /* General */
+  section {
+    padding: 60px 20px !important;
+  }
+}

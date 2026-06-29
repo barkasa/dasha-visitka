@@ -16,7 +16,9 @@ const allWorks = {
         year: "2024",
         sub: "Silk scarf",
         subRu: "Шёлковый шарф",
-        icon: "🧣",
+        // icon: "🧣",
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_1.jpg",
       },
       {
         id: 2,
