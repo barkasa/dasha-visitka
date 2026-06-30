@@ -384,7 +384,7 @@ function WorkCard({ work, lang, onClick }) {
         aspectRatio: "1/1",
       }}
     >
-      <div
+      {/* <div
         style={{
           width: "100%",
           height: "100%",
@@ -408,6 +408,50 @@ function WorkCard({ work, lang, onClick }) {
         >
           {lang === "en" ? work.sub : work.subRu}
         </span>
+      </div> */}
+      <div
+        style={{
+          width: "100%",
+          height: "100%",
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+          gap: "12px",
+          transform: hovered ? "scale(1.04)" : "scale(1)",
+          transition: "transform 0.5s cubic-bezier(0.4,0,0.2,1)",
+        }}
+      >
+        {work.image ? (
+          <img
+            src={work.image}
+            alt={work.title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              position: "absolute",
+              inset: 0,
+            }}
+          />
+        ) : (
+          <>
+            <span style={{ fontSize: "2.5rem", opacity: 0.1 }}>
+              {work.icon}
+            </span>
+            <span
+              style={{
+                fontSize: "0.6rem",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "rgba(255,255,255,0.12)",
+              }}
+            >
+              {lang === "en" ? work.sub : work.subRu}
+            </span>
+          </>
+        )}
       </div>
 
       <span
