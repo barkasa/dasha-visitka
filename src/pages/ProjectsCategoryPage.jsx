@@ -1,130 +1,12 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-
-const allProjects = {
-  illustration: {
-    titleEn: "Illustration",
-    titleRu: "Иллюстрация",
-    descEn: "Book illustrations and series.",
-    descRu: "Иллюстрации для книг и серии работ.",
-    works: [
-      {
-        id: 1,
-        title: "Children's Book I",
-        titleRu: "Детская книга I",
-        year: "2024",
-        sub: "Book illustration",
-        subRu: "Книжная иллюстрация",
-        icon: "📖",
-      },
-      {
-        id: 2,
-        title: "Children's Book II",
-        titleRu: "Детская книга II",
-        year: "2024",
-        sub: "Book illustration",
-        subRu: "Книжная иллюстрация",
-        icon: "📖",
-      },
-      {
-        id: 3,
-        title: "Illustration Series I",
-        titleRu: "Серия иллюстраций I",
-        year: "2023",
-        sub: "Editorial illustration",
-        subRu: "Редакционная иллюстрация",
-        icon: "🎨",
-      },
-      {
-        id: 4,
-        title: "Illustration Series II",
-        titleRu: "Серия иллюстраций II",
-        year: "2022",
-        sub: "Editorial illustration",
-        subRu: "Редакционная иллюстрация",
-        icon: "🎨",
-      },
-    ],
-  },
-  graphic: {
-    titleEn: "Graphic Design",
-    titleRu: "Графический дизайн",
-    descEn:
-      "Catalogues, booklets, posters, packaging, logos and technical drawings.",
-    descRu:
-      "Каталоги, буклеты, плакаты, упаковка, логотипы и технические чертежи.",
-    works: [
-      {
-        id: 1,
-        title: "Brand Identity",
-        titleRu: "Айдентика бренда",
-        year: "2024",
-        sub: "Logo & Identity",
-        subRu: "Логотип и айдентика",
-        icon: "✦",
-      },
-      {
-        id: 2,
-        title: "Product Catalogue",
-        titleRu: "Каталог продукции",
-        year: "2024",
-        sub: "Catalogue",
-        subRu: "Каталог",
-        icon: "📋",
-      },
-      {
-        id: 3,
-        title: "Poster Series",
-        titleRu: "Серия плакатов",
-        year: "2023",
-        sub: "Poster design",
-        subRu: "Дизайн плакатов",
-        icon: "🖼",
-      },
-      {
-        id: 4,
-        title: "Packaging Design",
-        titleRu: "Дизайн упаковки",
-        year: "2023",
-        sub: "Packaging",
-        subRu: "Упаковка",
-        icon: "📦",
-      },
-      {
-        id: 5,
-        title: "Booklet & Brochure",
-        titleRu: "Буклет и брошюра",
-        year: "2023",
-        sub: "Print design",
-        subRu: "Печатный дизайн",
-        icon: "📄",
-      },
-      {
-        id: 6,
-        title: "Business Cards",
-        titleRu: "Визитные карточки",
-        year: "2022",
-        sub: "Print design",
-        subRu: "Печатный дизайн",
-        icon: "🗂",
-      },
-      {
-        id: 7,
-        title: "Technical Drawings",
-        titleRu: "Технические чертежи",
-        year: "2022",
-        sub: "Technical",
-        subRu: "Технический",
-        icon: "📐",
-      },
-    ],
-  },
-};
+import { projectCategories, projectWorks } from "../data/works";
 
 export default function ProjectsCategoryPage({ lang }) {
   const { category } = useParams();
   const [lightbox, setLightbox] = useState(null);
-  const data = allProjects[category];
+  const data = projectCategories[category];
+  const works = projectWorks.filter((w) => w.category === category);
 
   if (!data)
     return (
@@ -191,7 +73,7 @@ export default function ProjectsCategoryPage({ lang }) {
             gap: "3px",
           }}
         >
-          {data.works.map((work) => (
+          {works.map((work) => (
             <WorkCard
               key={work.id}
               work={work}
@@ -214,51 +96,71 @@ export default function ProjectsCategoryPage({ lang }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            padding: "40px",
+            padding: "20px",
+            overflowY: "auto",
           }}
         >
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 320px",
-              gap: "48px",
-              maxWidth: "1000px",
+              gridTemplateColumns: "1fr 360px",
+              gap: "56px",
+              maxWidth: "1400px",
               width: "100%",
-              alignItems: "center",
+              alignItems: "start",
             }}
           >
             <div
               style={{
-                aspectRatio: "4/3",
-                background: "#2A2520",
+                width: "100%",
+                background: "transparent",
+                position: "relative",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
                 gap: "16px",
+                maxHeight: "85vh",
               }}
             >
-              <span style={{ fontSize: "4rem", opacity: 0.15 }}>
-                {lightbox.icon}
-              </span>
-              <span
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.2)",
-                }}
-              >
-                {lang === "en" ? "[ Image ]" : "[ Изображение ]"}
-              </span>
+              {lightbox.image ? (
+                <img
+                  src={lightbox.image}
+                  alt={lightbox.title}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    maxHeight: "85vh",
+                    objectFit: "contain",
+                    display: "block",
+                  }}
+                />
+              ) : (
+                <>
+                  <span style={{ fontSize: "4rem", opacity: 0.15 }}>
+                    {data.icon}
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "0.6rem",
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
+                      color: "rgba(255,255,255,0.2)",
+                      padding: "60px 0",
+                    }}
+                  >
+                    {lang === "en" ? "[ Image ]" : "[ Изображение ]"}
+                  </span>
+                </>
+              )}
             </div>
 
-            <div>
+            <div style={{ paddingTop: "12px" }}>
               <h2
                 style={{
                   fontFamily: "var(--F)",
-                  fontSize: "2rem",
+                  fontSize: "2.2rem",
                   fontWeight: 300,
                   color: "var(--white)",
                   marginBottom: "24px",
@@ -356,6 +258,7 @@ function WorkCard({ work, lang, onClick }) {
         style={{
           width: "100%",
           height: "100%",
+          position: "relative",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
@@ -365,17 +268,30 @@ function WorkCard({ work, lang, onClick }) {
           transition: "transform 0.5s cubic-bezier(0.4,0,0.2,1)",
         }}
       >
-        <span style={{ fontSize: "2.5rem", opacity: 0.1 }}>{work.icon}</span>
-        <span
-          style={{
-            fontSize: "0.6rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.12)",
-          }}
-        >
-          {lang === "en" ? work.sub : work.subRu}
-        </span>
+        {work.image ? (
+          <img
+            src={work.image}
+            alt={work.title}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: "cover",
+              position: "absolute",
+              inset: 0,
+            }}
+          />
+        ) : (
+          <span
+            style={{
+              fontSize: "0.6rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.12)",
+            }}
+          >
+            {lang === "en" ? work.sub : work.subRu}
+          </span>
+        )}
       </div>
 
       <span
@@ -385,6 +301,7 @@ function WorkCard({ work, lang, onClick }) {
           right: "16px",
           fontSize: "0.6rem",
           color: "rgba(255,255,255,0.2)",
+          zIndex: 2,
         }}
       >
         {work.year}

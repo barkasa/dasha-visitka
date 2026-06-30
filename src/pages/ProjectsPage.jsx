@@ -1,28 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { projectCategories, projectWorks } from "../data/works";
 
 export default function ProjectsPage({ lang }) {
-  const categories = [
-    {
-      slug: "illustration",
-      titleEn: "Illustration",
-      titleRu: "Иллюстрация",
-      descEn: "Books & series",
-      descRu: "Книги и серии",
-      icon: "📖",
-      count: 4,
-    },
-    {
-      slug: "graphic",
-      titleEn: "Graphic Design",
-      titleRu: "Графический дизайн",
-      descEn: "Catalogues, posters, packaging, logos",
-      descRu: "Каталоги, плакаты, упаковка, логотипы",
-      icon: "✦",
-      count: 7,
-    },
-  ];
-
   return (
     <div
       style={{
@@ -78,8 +58,14 @@ export default function ProjectsPage({ lang }) {
             gap: "3px",
           }}
         >
-          {categories.map((cat) => (
-            <CategoryCard key={cat.slug} cat={cat} lang={lang} />
+          {Object.entries(projectCategories).map(([slug, cat]) => (
+            <CategoryCard
+              key={slug}
+              slug={slug}
+              cat={cat}
+              count={projectWorks.filter((w) => w.category === slug).length}
+              lang={lang}
+            />
           ))}
         </div>
       </div>
@@ -87,12 +73,12 @@ export default function ProjectsPage({ lang }) {
   );
 }
 
-function CategoryCard({ cat, lang }) {
+function CategoryCard({ slug, cat, count, lang }) {
   const [hovered, setHovered] = useState(false);
 
   return (
     <Link
-      to={`/projects/${cat.slug}`}
+      to={`/projects/${slug}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       style={{
@@ -126,7 +112,7 @@ function CategoryCard({ cat, lang }) {
             color: "rgba(255,255,255,0.15)",
           }}
         >
-          {cat.count} {lang === "en" ? "projects" : "проектов"}
+          {count} {lang === "en" ? "projects" : "проектов"}
         </span>
       </div>
 

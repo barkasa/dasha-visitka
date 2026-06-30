@@ -116,21 +116,44 @@ export default function ContactsPage({ lang }) {
               {txt.body}
             </p>
 
-            <div style={{ display: "flex", flexDirection: "column" }}>
+            <div
+              className="contact-lines"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
               {[
-                ["Email", "hello@dariamorozova.com"],
-                ["Instagram", "@dariamorozova"],
-                ["Behance", "behance.net/dariamorozova"],
-                ["Telegram", "@dariamorozova"],
-              ].map(([type, val]) => (
-                <div
+                ["Email", "dasha.led@gmail.com", "mailto:dasha.led@gmail.com"],
+                ["WhatsApp", "+49 178 1047636", "https://wa.me/+491781047636"],
+                ["Telegram", "@daria_kunst", "https://t.me/daria_kunst"],
+                [
+                  "Instagram",
+                  "@itsmedaria.m",
+                  "https://instagram.com/itsmedaria.m",
+                ],
+                [
+                  "Instagram-art",
+                  "@mdari.a_kunst",
+                  "https://instagram.com/mdari.a_kunst",
+                ],
+                [
+                  "LinkedIn",
+                  "Daria Morozova",
+                  "https://www.linkedin.com/in/daria-morozova-54201015/",
+                ],
+                ["ArtStation", "Daria M.", "https://mdaria.artstation.com/"],
+              ].map(([type, val, url]) => (
+                <a
                   key={type}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   style={{
                     display: "flex",
                     alignItems: "center",
                     gap: "20px",
                     padding: "18px 0",
                     borderBottom: "1px solid rgba(255,255,255,0.08)",
+                    textDecoration: "none",
+                    transition: "border-color 0.2s",
                   }}
                 >
                   <span
@@ -147,12 +170,12 @@ export default function ContactsPage({ lang }) {
                   <span
                     style={{
                       fontSize: "0.9rem",
-                      color: "rgba(255,255,255,0.6)",
+                      color: "rgba(255,255,255,0.7)",
                     }}
                   >
                     {val}
                   </span>
-                </div>
+                </a>
               ))}
             </div>
           </div>

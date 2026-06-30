@@ -1,166 +1,21 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-
-const allWorks = {
-  batik: {
-    titleEn: "Batik",
-    titleRu: "Батик",
-    descEn:
-      "Silk paintings and scarves created using the ancient batik technique.",
-    descRu: "Картины и шарфы на шёлке, созданные в технике батик.",
-    works: [
-      {
-        id: 1,
-        title: "Silk Batik I",
-        titleRu: "Батик на шёлке I",
-        year: "2024",
-        sub: "Silk scarf",
-        subRu: "Шёлковый шарф",
-        // icon: "🧣",
-        image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_1.jpg",
-      },
-      {
-        id: 2,
-        title: "Silk Batik II",
-        titleRu: "Батик на шёлке II",
-        year: "2024",
-        sub: "Painting",
-        subRu: "Картина",
-        icon: "🧣",
-      },
-      {
-        id: 3,
-        title: "Silk Batik III",
-        titleRu: "Батик на шёлке III",
-        year: "2023",
-        sub: "Silk scarf",
-        subRu: "Шёлковый шарф",
-        icon: "🧣",
-      },
-      {
-        id: 4,
-        title: "Silk Batik IV",
-        titleRu: "Батик на шёлке IV",
-        year: "2023",
-        sub: "Painting",
-        subRu: "Картина",
-        icon: "🧣",
-      },
-      {
-        id: 5,
-        title: "Silk Batik V",
-        titleRu: "Батик на шёлке V",
-        year: "2022",
-        sub: "Silk scarf",
-        subRu: "Шёлковый шарф",
-        icon: "🧣",
-      },
-    ],
-  },
-  painting: {
-    titleEn: "Painting",
-    titleRu: "Живопись",
-    descEn: "Works in acrylic, oil, alcohol ink and watercolour.",
-    descRu: "Работы в технике акрил, масло, алкогольные чернила и акварель.",
-    works: [
-      {
-        id: 1,
-        title: "Acrylic Series I",
-        titleRu: "Акрил I",
-        year: "2024",
-        sub: "Acrylic on canvas",
-        subRu: "Акрил на холсте",
-        icon: "🎨",
-      },
-      {
-        id: 2,
-        title: "Oil Study",
-        titleRu: "Масляный этюд",
-        year: "2024",
-        sub: "Oil on canvas",
-        subRu: "Масло на холсте",
-        icon: "🎨",
-      },
-      {
-        id: 3,
-        title: "Alcohol Ink I",
-        titleRu: "Алкогольные чернила I",
-        year: "2023",
-        sub: "Alcohol ink",
-        subRu: "Алкогольные чернила",
-        icon: "🎨",
-      },
-      {
-        id: 4,
-        title: "Alcohol Ink II",
-        titleRu: "Алкогольные чернила II",
-        year: "2023",
-        sub: "Alcohol ink",
-        subRu: "Алкогольные чернила",
-        icon: "🎨",
-      },
-      {
-        id: 5,
-        title: "Watercolour Series",
-        titleRu: "Акварельная серия",
-        year: "2022",
-        sub: "Watercolour",
-        subRu: "Акварель",
-        icon: "🎨",
-      },
-    ],
-  },
-  decorative: {
-    titleEn: "Decorative",
-    titleRu: "Декоративные работы",
-    descEn: "Decorative panels and reliefs made from plaster.",
-    descRu: "Декоративные панно и рельефы из гипса.",
-    works: [
-      {
-        id: 1,
-        title: "Plaster Relief I",
-        titleRu: "Гипсовый рельеф I",
-        year: "2024",
-        sub: "Plaster",
-        subRu: "Гипс",
-        icon: "🏺",
-      },
-      {
-        id: 2,
-        title: "Plaster Relief II",
-        titleRu: "Гипсовый рельеф II",
-        year: "2023",
-        sub: "Plaster",
-        subRu: "Гипс",
-        icon: "🏺",
-      },
-      {
-        id: 3,
-        title: "Decorative Panel",
-        titleRu: "Декоративное панно",
-        year: "2022",
-        sub: "Plaster",
-        subRu: "Гипс",
-        icon: "🏺",
-      },
-    ],
-  },
-};
+import { galleryCategories, galleryWorks } from "../data/works";
 
 export default function GalleryCategoryPage({ lang }) {
   const { category } = useParams();
   const [lightbox, setLightbox] = useState(null);
-  const data = allWorks[category];
+  const data = galleryCategories[category];
+  const works = galleryWorks.filter((w) => w.category === category);
 
   if (!data)
     return (
       <div style={{ padding: "120px 48px", color: "var(--white)" }}>
-        <Link to="/gallery">← Back</Link>
+        <Link to="/gallery" style={{ color: "var(--warm)" }}>
+          ← Back
+        </Link>
       </div>
     );
-
-  const works = data.works;
 
   return (
     <div
@@ -171,7 +26,6 @@ export default function GalleryCategoryPage({ lang }) {
       }}
     >
       <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
-        {/* Назад */}
         <Link
           to="/gallery"
           style={{
@@ -189,7 +43,6 @@ export default function GalleryCategoryPage({ lang }) {
           ← {lang === "en" ? "Back to Gallery" : "Назад в галерею"}
         </Link>
 
-        {/* Заголовок */}
         <h1
           style={{
             fontFamily: "var(--F)",
@@ -213,7 +66,6 @@ export default function GalleryCategoryPage({ lang }) {
           {lang === "en" ? data.descEn : data.descRu}
         </p>
 
-        {/* Сетка */}
         <div
           style={{
             display: "grid",
@@ -244,53 +96,74 @@ export default function GalleryCategoryPage({ lang }) {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            padding: "40px",
+            padding: "20px",
+            overflowY: "auto",
           }}
         >
           <div
             onClick={(e) => e.stopPropagation()}
             style={{
               display: "grid",
-              gridTemplateColumns: "1fr 320px",
-              gap: "48px",
-              maxWidth: "1000px",
+              gridTemplateColumns: "1fr 360px",
+              gap: "56px",
+              maxWidth: "1400px",
               width: "100%",
-              alignItems: "center",
+              alignItems: "start",
             }}
           >
-            {/* Изображение */}
+            {/* Изображение — крупное, без обрезки */}
             <div
               style={{
-                aspectRatio: "4/3",
-                background: "#2A2520",
+                width: "100%",
+                // background: "#2A2520",
+                background: "transparent",
+                position: "relative",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
                 gap: "16px",
+                maxHeight: "85vh",
               }}
             >
-              <span style={{ fontSize: "4rem", opacity: 0.15 }}>
-                {lightbox.icon}
-              </span>
-              <span
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.2em",
-                  textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.2)",
-                }}
-              >
-                {lang === "en" ? "[ Image ]" : "[ Изображение ]"}
-              </span>
+              {lightbox.image ? (
+                <img
+                  src={lightbox.image}
+                  alt={lightbox.title}
+                  style={{
+                    width: "100%",
+                    height: "auto",
+                    maxHeight: "85vh",
+                    objectFit: "contain",
+                    display: "block",
+                  }}
+                />
+              ) : (
+                <>
+                  <span style={{ fontSize: "4rem", opacity: 0.15 }}>
+                    {data.icon}
+                  </span>
+                  <span
+                    style={{
+                      fontSize: "0.6rem",
+                      letterSpacing: "0.2em",
+                      textTransform: "uppercase",
+                      color: "rgba(255,255,255,0.2)",
+                      padding: "60px 0",
+                    }}
+                  >
+                    {lang === "en" ? "[ Image ]" : "[ Изображение ]"}
+                  </span>
+                </>
+              )}
             </div>
 
             {/* Инфо */}
-            <div>
+            <div style={{ paddingTop: "12px" }}>
               <h2
                 style={{
                   fontFamily: "var(--F)",
-                  fontSize: "2rem",
+                  fontSize: "2.2rem",
                   fontWeight: 300,
                   color: "var(--white)",
                   marginBottom: "24px",
@@ -384,31 +257,6 @@ function WorkCard({ work, lang, onClick }) {
         aspectRatio: "1/1",
       }}
     >
-      {/* <div
-        style={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          flexDirection: "column",
-          gap: "12px",
-          transform: hovered ? "scale(1.04)" : "scale(1)",
-          transition: "transform 0.5s cubic-bezier(0.4,0,0.2,1)",
-        }}
-      >
-        <span style={{ fontSize: "2.5rem", opacity: 0.1 }}>{work.icon}</span>
-        <span
-          style={{
-            fontSize: "0.6rem",
-            letterSpacing: "0.2em",
-            textTransform: "uppercase",
-            color: "rgba(255,255,255,0.12)",
-          }}
-        >
-          {lang === "en" ? work.sub : work.subRu}
-        </span>
-      </div> */}
       <div
         style={{
           width: "100%",
@@ -436,21 +284,16 @@ function WorkCard({ work, lang, onClick }) {
             }}
           />
         ) : (
-          <>
-            <span style={{ fontSize: "2.5rem", opacity: 0.1 }}>
-              {work.icon}
-            </span>
-            <span
-              style={{
-                fontSize: "0.6rem",
-                letterSpacing: "0.2em",
-                textTransform: "uppercase",
-                color: "rgba(255,255,255,0.12)",
-              }}
-            >
-              {lang === "en" ? work.sub : work.subRu}
-            </span>
-          </>
+          <span
+            style={{
+              fontSize: "0.6rem",
+              letterSpacing: "0.2em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.12)",
+            }}
+          >
+            {lang === "en" ? work.sub : work.subRu}
+          </span>
         )}
       </div>
 
@@ -461,6 +304,7 @@ function WorkCard({ work, lang, onClick }) {
           right: "16px",
           fontSize: "0.6rem",
           color: "rgba(255,255,255,0.2)",
+          zIndex: 2,
         }}
       >
         {work.year}
