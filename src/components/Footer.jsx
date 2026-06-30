@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import styles from "./Footer.module.css";
 
 export default function Footer({ lang }) {
   const t = {
@@ -20,79 +21,24 @@ export default function Footer({ lang }) {
   const txt = t[lang];
 
   return (
-    <footer
-      style={{
-        background: "#080806",
-        padding: "56px 48px 36px",
-        borderTop: "1px solid rgba(255,255,255,0.05)",
-      }}
-    >
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "2fr 1fr 1fr 1fr",
-          gap: "40px",
-          marginBottom: "48px",
-          maxWidth: "1200px",
-          margin: "0 auto 48px",
-        }}
-      >
+    <footer className={styles.footer}>
+      <div className={styles.footerTop}>
         {/* Бренд */}
         <div>
-          <div
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "1.8rem",
-              fontWeight: 300,
-              color: "var(--white)",
-              fontStyle: "italic",
-              marginBottom: "12px",
-            }}
-          >
-            Daria Morozova
-          </div>
-          <p
-            style={{
-              fontSize: "0.78rem",
-              lineHeight: 1.7,
-              color: "rgba(255,255,255,0.25)",
-              maxWidth: "240px",
-            }}
-          >
-            {txt.desc}
-          </p>
+          <div className={styles.footerName}>Daria Morozova</div>
+          <p className={styles.footerDesc}>{txt.desc}</p>
         </div>
 
         {/* Меню */}
         <div>
-          <h4
-            style={{
-              fontSize: "0.6rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "var(--stone)",
-              marginBottom: "18px",
-            }}
-          >
-            {txt.menu}
-          </h4>
+          <h4 className={styles.colTitle}>{txt.menu}</h4>
           {[
             ["/", lang === "en" ? "Home" : "Главная"],
             ["/projects", lang === "en" ? "Projects" : "Проекты"],
             ["/gallery", lang === "en" ? "Gallery" : "Галерея"],
             ["/contacts", lang === "en" ? "Contact" : "Контакты"],
           ].map(([to, label]) => (
-            <Link
-              key={to}
-              to={to}
-              style={{
-                display: "block",
-                fontSize: "0.82rem",
-                color: "rgba(255,255,255,0.35)",
-                textDecoration: "none",
-                marginBottom: "10px",
-              }}
-            >
+            <Link key={to} to={to} className={styles.colLink}>
               {label}
             </Link>
           ))}
@@ -100,77 +46,44 @@ export default function Footer({ lang }) {
 
         {/* Соцсети */}
         <div>
-          <h4
-            style={{
-              fontSize: "0.6rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "var(--stone)",
-              marginBottom: "18px",
-            }}
-          >
-            {txt.social}
-          </h4>
-          {["Instagram", "Behance", "Pinterest", "Telegram"].map((s) => (
+          <h4 className={styles.colTitle}>{txt.social}</h4>
+          {[
+            ["WhatsApp", "https://wa.me/+491781047636"],
+            ["Telegram", "https://t.me/daria_kunst"],
+            ["Instagram", "https://instagram.com/itsmedaria.m"],
+            ["Instagram-art", "https://instagram.com/mdari.a_kunst"],
+            [
+              "LinkedIn",
+              "https://www.linkedin.com/in/daria-morozova-54201015/",
+            ],
+            ["ArtStation", "https://mdaria.artstation.com/"],
+          ].map(([label, url]) => (
             <a
-              key={s}
-              href="#"
-              style={{
-                display: "block",
-                fontSize: "0.82rem",
-                color: "rgba(255,255,255,0.35)",
-                textDecoration: "none",
-                marginBottom: "10px",
-              }}
+              key={label}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.colLink}
             >
-              {s}
+              {label}
             </a>
           ))}
         </div>
 
         {/* Контакты */}
         <div>
-          <h4
-            style={{
-              fontSize: "0.6rem",
-              letterSpacing: "0.2em",
-              textTransform: "uppercase",
-              color: "var(--stone)",
-              marginBottom: "18px",
-            }}
-          >
-            {txt.contact}
-          </h4>
-          <p
-            style={{
-              fontSize: "0.82rem",
-              color: "rgba(255,255,255,0.35)",
-              marginBottom: "10px",
-            }}
-          >
-            hello@dariamorozova.com
-          </p>
-          <p style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.35)" }}>
-            [City], [Country]
-          </p>
+          <h4 className={styles.colTitle}>{txt.contact}</h4>
+          <p className={styles.colText}>dasha.led@gmail.com</p>
+          <p className={styles.colText}>Düsseldorf, Germany</p>
         </div>
       </div>
 
       {/* Нижняя строка */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          paddingTop: "24px",
-          borderTop: "1px solid rgba(255,255,255,0.05)",
-          maxWidth: "1200px",
-          margin: "0 auto",
-        }}
-      >
-        <p style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.15)" }}>
+      <div className={styles.footerBottom}>
+        <p className={styles.footerBottomText}>
           © 2026 Daria Morozova. {txt.rights}
         </p>
-        <p style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.15)" }}>
+        <p className={styles.footerBottomText}>
           {lang === "en" ? "Design & Dev — Ivan" : "Дизайн и разработка — Иван"}
         </p>
       </div>
