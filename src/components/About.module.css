@@ -1,0 +1,153 @@
+.about {
+  background: var(--cream);
+  color: var(--ink);
+  padding: 100px 48px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 56px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tagLine {
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.photoWrap {
+  position: relative;
+}
+
+.photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  background: linear-gradient(160deg, #d5c8b8 0%, #b8a898 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.photoText {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.photoLabel {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  background: var(--ink);
+  color: var(--white);
+  padding: 16px 24px;
+  font-family: var(--F);
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.headline {
+  font-family: var(--F);
+  font-size: clamp(2.2rem, 3.5vw, 3.2rem);
+  font-weight: 300;
+  line-height: 1.15;
+  margin-bottom: 32px;
+}
+
+.headlineAccent {
+  font-style: italic;
+  color: var(--accent);
+}
+
+.body {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  color: #4a4a46;
+  margin-bottom: 16px;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--warm);
+  margin: 32px 0;
+}
+
+.stats {
+  display: flex;
+  gap: 48px;
+}
+
+.statNum {
+  font-family: var(--F);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-top: 6px;
+}
+.downloadBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+  padding: 12px 28px;
+  background: none;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  font-family: var(--FB);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 2px;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.downloadBtn:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 20px;
+  }
+  .layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .stats {
+    gap: 32px;
+  }
+}
