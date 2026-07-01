@@ -1,8 +1,17 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import {
+  FaWhatsapp,
+  FaTelegram,
+  FaInstagram,
+  FaLinkedin,
+  FaArtstation,
+} from "react-icons/fa";
+import styles from "./Contacts.module.css";
 
 export default function ContactsPage({ lang }) {
   const [sending, setSending] = useState(false);
+  const [errors, setErrors] = useState({});
   const navigate = useNavigate();
 
   const t = {
@@ -10,31 +19,51 @@ export default function ContactsPage({ lang }) {
       tag: "Get in Touch",
       title: "Let's create something",
       accent: "beautiful together",
-      body: "Open to commissions, collaborations, and new creative projects. Write to me — I would love to hear your ideas.",
       name: "Your Name",
       email: "Your Email",
       message: "Message",
       send: "Send Message →",
       sending: "Sending...",
+      errName: "Please enter your name",
+      errEmail: "Please enter a valid email",
+      errMessage: "Please write a message",
     },
     ru: {
       tag: "Связаться",
       title: "Давайте создадим что-то",
       accent: "прекрасное вместе",
-      body: "Открыта к заказам, коллаборациям и творческим проектам. Напишите мне — буду рада познакомиться с вашими идеями.",
       name: "Ваше имя",
       email: "Ваш email",
       message: "Сообщение",
       send: "Отправить →",
       sending: "Отправляем...",
+      errName: "Пожалуйста, введите имя",
+      errEmail: "Пожалуйста, введите корректный email",
+      errMessage: "Пожалуйста, напишите сообщение",
     },
   };
   const txt = t[lang];
 
+  function validate(data) {
+    const errs = {};
+    if (!data.get("name")?.trim()) errs.name = txt.errName;
+    const email = data.get("email")?.trim();
+    if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email))
+      errs.email = txt.errEmail;
+    if (!data.get("message")?.trim()) errs.message = txt.errMessage;
+    return errs;
+  }
+
   async function handleSubmit(e) {
     e.preventDefault();
-    setSending(true);
     const data = new FormData(e.target);
+    const errs = validate(data);
+    if (Object.keys(errs).length > 0) {
+      setErrors(errs);
+      return;
+    }
+    setErrors({});
+    setSending(true);
     const response = await fetch("https://formspree.io/f/maqgbolg", {
       method: "POST",
       body: data,
@@ -48,247 +77,114 @@ export default function ContactsPage({ lang }) {
     }
   }
 
+  const socials = [
+    {
+      label: "WhatsApp",
+      icon: <FaWhatsapp size={28} />,
+      url: "https://wa.me/+491781047636",
+    },
+    {
+      label: "Telegram",
+      icon: <FaTelegram size={28} />,
+      url: "https://t.me/daria_kunst",
+    },
+    {
+      label: "Instagram",
+      icon: <FaInstagram size={28} />,
+      url: "https://instagram.com/mdari.a_kunst",
+    },
+    {
+      label: "LinkedIn",
+      icon: <FaLinkedin size={28} />,
+      url: "https://www.linkedin.com/in/daria-morozova-54201015/",
+    },
+    {
+      label: "ArtStation",
+      icon: <FaArtstation size={28} />,
+      url: "https://mdaria.artstation.com/",
+    },
+  ];
+
   return (
-    <div
-      style={{
-        background: "var(--ink)",
-        minHeight: "100vh",
-        padding: "120px 48px 80px",
-      }}
-    >
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        <p
-          style={{
-            fontSize: "0.62rem",
-            letterSpacing: "0.25em",
-            textTransform: "uppercase",
-            color: "var(--stone)",
-            marginBottom: "48px",
-            display: "flex",
-            alignItems: "center",
-            gap: "16px",
-          }}
-        >
-          <span
-            style={{
-              width: "32px",
-              height: "1px",
-              background: "var(--accent)",
-              display: "inline-block",
-            }}
-          />
+    <div className={styles.page}>
+      <div className={styles.inner}>
+        <p className={styles.tag}>
+          <span className={styles.tagLine} />
           {txt.tag}
         </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "80px",
-            alignItems: "start",
-          }}
-        >
-          {/* Левая колонка */}
-          <div>
-            <h1
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "clamp(2.5rem, 4vw, 4rem)",
-                fontWeight: 300,
-                lineHeight: 1.05,
-                marginBottom: "24px",
-              }}
-            >
-              {txt.title}
-              <br />
-              <em style={{ fontStyle: "italic", color: "var(--warm)" }}>
-                {txt.accent}
-              </em>
-            </h1>
-            <p
-              style={{
-                fontSize: "0.85rem",
-                lineHeight: 1.8,
-                color: "rgba(255,255,255,0.4)",
-                marginBottom: "48px",
-              }}
-            >
-              {txt.body}
-            </p>
+        <h1 className={styles.title}>
+          {txt.title}
+          <br />
+          <em className={styles.titleAccent}>{txt.accent}</em>
+        </h1>
 
-            <div
-              className="contact-lines"
-              style={{ display: "flex", flexDirection: "column" }}
-            >
-              {[
-                ["Email", "dasha.led@gmail.com", "mailto:dasha.led@gmail.com"],
-                ["WhatsApp", "+49 178 1047636", "https://wa.me/+491781047636"],
-                ["Telegram", "@daria_kunst", "https://t.me/daria_kunst"],
-                [
-                  "Instagram",
-                  "@itsmedaria.m",
-                  "https://instagram.com/itsmedaria.m",
-                ],
-                [
-                  "Instagram-art",
-                  "@mdari.a_kunst",
-                  "https://instagram.com/mdari.a_kunst",
-                ],
-                [
-                  "LinkedIn",
-                  "Daria Morozova",
-                  "https://www.linkedin.com/in/daria-morozova-54201015/",
-                ],
-                ["ArtStation", "Daria M.", "https://mdaria.artstation.com/"],
-              ].map(([type, val, url]) => (
-                <a
-                  key={type}
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "20px",
-                    padding: "18px 0",
-                    borderBottom: "1px solid rgba(255,255,255,0.08)",
-                    textDecoration: "none",
-                    transition: "border-color 0.2s",
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: "0.6rem",
-                      letterSpacing: "0.18em",
-                      textTransform: "uppercase",
-                      color: "var(--stone)",
-                      minWidth: "70px",
-                    }}
-                  >
-                    {type}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: "0.9rem",
-                      color: "rgba(255,255,255,0.7)",
-                    }}
-                  >
-                    {val}
-                  </span>
-                </a>
-              ))}
-            </div>
+        <form onSubmit={handleSubmit} className={styles.form} noValidate>
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>{txt.name}</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Jane Smith"
+              className={`${styles.formInput} ${errors.name ? styles.error : ""}`}
+              onChange={() => setErrors((e) => ({ ...e, name: "" }))}
+            />
+            {errors.name && (
+              <span className={styles.errorMsg}>{errors.name}</span>
+            )}
           </div>
 
-          {/* Форма */}
-          <form
-            onSubmit={handleSubmit}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: "28px",
-            }}
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>{txt.email}</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="jane@example.com"
+              className={`${styles.formInput} ${errors.email ? styles.error : ""}`}
+              onChange={() => setErrors((e) => ({ ...e, email: "" }))}
+            />
+            {errors.email && (
+              <span className={styles.errorMsg}>{errors.email}</span>
+            )}
+          </div>
+
+          <div className={styles.formGroup}>
+            <label className={styles.formLabel}>{txt.message}</label>
+            <textarea
+              name="message"
+              placeholder="Tell me about your project..."
+              rows={5}
+              className={`${styles.formTextarea} ${errors.message ? styles.error : ""}`}
+              onChange={() => setErrors((e) => ({ ...e, message: "" }))}
+            />
+            {errors.message && (
+              <span className={styles.errorMsg}>{errors.message}</span>
+            )}
+          </div>
+
+          <button
+            type="submit"
+            disabled={sending}
+            className={`${styles.submitBtn} ${sending ? styles.submitBtnDisabled : ""}`}
           >
-            {[
-              {
-                name: "name",
-                label: txt.name,
-                type: "text",
-                placeholder: "Jane Smith",
-              },
-              {
-                name: "email",
-                label: txt.email,
-                type: "email",
-                placeholder: "jane@example.com",
-              },
-            ].map((field) => (
-              <div
-                key={field.name}
-                style={{ display: "flex", flexDirection: "column", gap: "8px" }}
-              >
-                <label
-                  style={{
-                    fontSize: "0.6rem",
-                    letterSpacing: "0.18em",
-                    textTransform: "uppercase",
-                    color: "var(--stone)",
-                  }}
-                >
-                  {field.label}
-                </label>
-                <input
-                  type={field.type}
-                  name={field.name}
-                  placeholder={field.placeholder}
-                  required
-                  style={{
-                    background: "none",
-                    border: "none",
-                    borderBottom: "1px solid rgba(255,255,255,0.12)",
-                    padding: "10px 0",
-                    fontFamily: "Inter, sans-serif",
-                    fontSize: "0.9rem",
-                    color: "var(--white)",
-                    outline: "none",
-                  }}
-                />
-              </div>
-            ))}
+            {sending ? txt.sending : txt.send}
+          </button>
+        </form>
 
-            <div
-              style={{ display: "flex", flexDirection: "column", gap: "8px" }}
+        {/* Соцсети */}
+        <div className={styles.socials}>
+          {socials.map((s) => (
+            <a
+              key={s.label}
+              href={s.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
             >
-              <label
-                style={{
-                  fontSize: "0.6rem",
-                  letterSpacing: "0.18em",
-                  textTransform: "uppercase",
-                  color: "var(--stone)",
-                }}
-              >
-                {txt.message}
-              </label>
-              <textarea
-                name="message"
-                placeholder="Tell me about your project..."
-                required
-                rows={5}
-                style={{
-                  background: "none",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255,255,255,0.12)",
-                  padding: "10px 0",
-                  fontFamily: "Inter, sans-serif",
-                  fontSize: "0.9rem",
-                  color: "var(--white)",
-                  outline: "none",
-                  resize: "none",
-                }}
-              />
-            </div>
-
-            <button
-              type="submit"
-              disabled={sending}
-              style={{
-                alignSelf: "flex-start",
-                background: sending ? "var(--stone)" : "var(--white)",
-                color: "var(--ink)",
-                border: "none",
-                padding: "14px 40px",
-                fontFamily: "Inter, sans-serif",
-                fontSize: "0.68rem",
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                cursor: sending ? "not-allowed" : "pointer",
-                borderRadius: "1px",
-                transition: "background 0.2s",
-              }}
-            >
-              {sending ? txt.sending : txt.send}
-            </button>
-          </form>
+              <span className={styles.socialIcon}>{s.icon}</span>
+              <span className={styles.socialLabel}>{s.label}</span>
+            </a>
+          ))}
         </div>
       </div>
     </div>
