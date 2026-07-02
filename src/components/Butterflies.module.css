@@ -1,0 +1,96 @@
+.butterfly {
+  position: fixed;
+  pointer-events: none;
+  z-index: 100;
+  animation: flutter 0.4s ease-in-out infinite alternate;
+  transition: opacity 0.8s ease;
+}
+
+.wing {
+  position: relative;
+  width: 70px;
+  height: 50px;
+}
+
+.wingLeft,
+.wingRight {
+  position: absolute;
+  top: 0;
+  width: 32px;
+  height: 44px;
+  border-radius: 50% 50% 50% 0;
+  opacity: 0.85;
+}
+
+.wingLeft {
+  left: 0;
+  transform-origin: right center;
+  background: radial-gradient(
+    ellipse at 60% 40%,
+    #c4a882 0%,
+    #9b6e4e 60%,
+    #7a5040 100%
+  );
+  border-radius: 0 50% 0 50%;
+  animation: flapLeft 0.35s ease-in-out infinite alternate;
+}
+
+.wingRight {
+  right: 0;
+  transform-origin: left center;
+  background: radial-gradient(
+    ellipse at 40% 40%,
+    #c4a882 0%,
+    #9b6e4e 60%,
+    #7a5040 100%
+  );
+  border-radius: 50% 0 50% 0;
+  animation: flapRight 0.35s ease-in-out infinite alternate;
+}
+
+@keyframes flapLeft {
+  0% {
+    transform: perspective(200px) rotateY(0deg) scaleX(1);
+  }
+  100% {
+    transform: perspective(200px) rotateY(50deg) scaleX(0.4);
+  }
+}
+
+@keyframes flapRight {
+  0% {
+    transform: perspective(200px) rotateY(0deg) scaleX(1);
+  }
+  100% {
+    transform: perspective(200px) rotateY(-50deg) scaleX(0.4);
+  }
+}
+.body {
+  position: absolute;
+  left: 50%;
+  top: 2px;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 36px;
+  background: #5a3a28;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+@keyframes flapLeft {
+  0% {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(200px) rotateY(60deg);
+  }
+}
+
+@keyframes flapRight {
+  0% {
+    transform: perspective(200px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(200px) rotateY(-60deg);
+  }
+}
