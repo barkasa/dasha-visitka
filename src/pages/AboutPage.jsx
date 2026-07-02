@@ -1,13 +1,13 @@
+import styles from "./AboutPage.module.css";
+
 export default function AboutPage({ lang }) {
   const t = {
     en: {
       tag: "About",
-      name: "Daria Morozova",
       role: "Graphic Designer · Artist · Illustrator",
-      location: "Düsseldorf, Germany",
+      location: "📍 Düsseldorf, Germany",
       bio1: "Daria Morozova is a graphic designer, artist and illustrator with over 8 years of professional experience. Her work spans brand identity, illustration, editorial design and fine art — united by a deep belief that visual language can carry meaning, emotion and beauty simultaneously.",
       bio2: "Born and educated in Kyrgyzstan, Daria is a member of the Union of Artists of Kyrgyzstan. Her work has been exhibited in Kyrgyzstan and Germany, reflecting a creative path that bridges Central Asian artistic traditions with European contemporary design.",
-
       eduTitle: "Education",
       edu: [
         {
@@ -16,7 +16,6 @@ export default function AboutPage({ lang }) {
           place: "[University name], Bishkek, Kyrgyzstan",
         },
       ],
-
       memberTitle: "Memberships",
       members: [
         {
@@ -25,7 +24,6 @@ export default function AboutPage({ lang }) {
           place: "Bishkek, Kyrgyzstan",
         },
       ],
-
       exhibTitle: "Exhibitions",
       exhib: [
         {
@@ -54,7 +52,6 @@ export default function AboutPage({ lang }) {
           place: "Bishkek, Kyrgyzstan",
         },
       ],
-
       skillsTitle: "Skills & Tools",
       skills: [
         "Brand Identity",
@@ -73,12 +70,10 @@ export default function AboutPage({ lang }) {
     },
     ru: {
       tag: "О себе",
-      name: "Дарья Морозова",
       role: "Графический дизайнер · Художник · Иллюстратор",
-      location: "Дюссельдорф, Германия",
+      location: "📍 Дюссельдорф, Германия",
       bio1: "Дарья Морозова — графический дизайнер, художник и иллюстратор с более чем 8-летним профессиональным опытом. Её работы охватывают айдентику, иллюстрацию, редакционный дизайн и изобразительное искусство.",
       bio2: "Родилась и получила образование в Кыргызстане, является членом Союза художников Кыргызстана. Работы выставлялись в Кыргызстане и Германии.",
-
       eduTitle: "Образование",
       edu: [
         {
@@ -87,7 +82,6 @@ export default function AboutPage({ lang }) {
           place: "[Название университета], Бишкек, Кыргызстан",
         },
       ],
-
       memberTitle: "Членство",
       members: [
         {
@@ -96,7 +90,6 @@ export default function AboutPage({ lang }) {
           place: "Бишкек, Кыргызстан",
         },
       ],
-
       exhibTitle: "Выставки",
       exhib: [
         {
@@ -125,7 +118,6 @@ export default function AboutPage({ lang }) {
           place: "Бишкек, Кыргызстан",
         },
       ],
-
       skillsTitle: "Навыки и инструменты",
       skills: [
         "Айдентика",
@@ -146,234 +138,84 @@ export default function AboutPage({ lang }) {
   const txt = t[lang];
 
   return (
-    <div
-      style={{
-        background: "var(--ink)",
-        minHeight: "100vh",
-        padding: "120px 48px 80px",
-      }}
-    >
-      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
-        {/* Тег */}
-        <p
-          style={{
-            fontSize: "0.62rem",
-            letterSpacing: "0.25em",
-            textTransform: "uppercase",
-            color: "var(--stone)",
-            marginBottom: "60px",
-            display: "flex",
-            alignItems: "center",
-            gap: "16px",
-          }}
-        >
-          <span
-            style={{
-              width: "32px",
-              height: "1px",
-              background: "var(--accent)",
-              display: "inline-block",
-            }}
-          />
+    <div className={styles.page}>
+      <div className={styles.inner}>
+        <p className={styles.tag}>
+          <span className={styles.tagLine} />
           {txt.tag}
         </p>
 
         {/* Шапка */}
-        <div style={{ marginBottom: "80px" }}>
-          <h1
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "clamp(3rem, 6vw, 5.5rem)",
-              fontWeight: 300,
-              lineHeight: 0.95,
-              marginBottom: "16px",
-            }}
-          >
-            {txt.name.split(" ")[0]}
+        <div className={styles.hero}>
+          <h1 className={styles.name}>
+            Daria
             <br />
-            <em style={{ fontStyle: "italic", color: "var(--warm)" }}>
-              {txt.name.split(" ")[1]}
-            </em>
+            <em className={styles.nameAccent}>Morozova</em>
           </h1>
-          <p
-            style={{
-              fontSize: "0.75rem",
-              letterSpacing: "0.15em",
-              textTransform: "uppercase",
-              color: "var(--stone)",
-              marginBottom: "8px",
-            }}
-          >
-            {txt.role}
-          </p>
-          <p style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.3)" }}>
-            📍 {txt.location}
-          </p>
+          <p className={styles.role}>{txt.role}</p>
+          <p className={styles.location}>{txt.location}</p>
         </div>
 
         {/* Био */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "48px",
-            marginBottom: "80px",
-            paddingBottom: "80px",
-            borderBottom: "1px solid rgba(255,255,255,0.08)",
-          }}
-        >
-          <p
-            style={{
-              fontSize: "0.95rem",
-              lineHeight: 1.85,
-              color: "rgba(255,255,255,0.6)",
-            }}
-          >
-            {txt.bio1}
-          </p>
-          <p
-            style={{
-              fontSize: "0.95rem",
-              lineHeight: 1.85,
-              color: "rgba(255,255,255,0.6)",
-            }}
-          >
-            {txt.bio2}
-          </p>
+        <div className={styles.bioGrid}>
+          <p className={styles.bioText}>{txt.bio1}</p>
+          <p className={styles.bioText}>{txt.bio2}</p>
         </div>
 
-        {/* Образование + Членство */}
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: "48px",
-            marginBottom: "80px",
-            paddingBottom: "80px",
-            borderBottom: "1px solid rgba(255,255,255,0.08)",
-          }}
-        >
-          <div>
-            <h2
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "1.8rem",
-                fontWeight: 300,
-                color: "var(--white)",
-                marginBottom: "32px",
-              }}
-            >
-              {txt.eduTitle}
-            </h2>
-            {txt.edu.map((e, i) => (
-              <TimelineItem key={i} item={e} />
-            ))}
-            <h2
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "1.8rem",
-                fontWeight: 300,
-                color: "var(--white)",
-                margin: "48px 0 32px",
-              }}
-            >
-              {txt.memberTitle}
-            </h2>
-            {txt.members.map((m, i) => (
-              <TimelineItem key={i} item={m} />
-            ))}
-          </div>
+        {/* Образование + Выставки */}
+        <div className={styles.section}>
+          <div className={styles.sectionGrid}>
+            <div>
+              <h2 className={styles.sectionTitle}>{txt.eduTitle}</h2>
+              {txt.edu.map((e, i) => (
+                <div key={i} className={styles.timelineItem}>
+                  <span className={styles.timelineYear}>{e.year}</span>
+                  <div>
+                    <div className={styles.timelineTitle}>{e.title}</div>
+                    <div className={styles.timelinePlace}>{e.place}</div>
+                  </div>
+                </div>
+              ))}
 
-          {/* Выставки */}
-          <div>
-            <h2
-              style={{
-                fontFamily: "var(--F)",
-                fontSize: "1.8rem",
-                fontWeight: 300,
-                color: "var(--white)",
-                marginBottom: "32px",
-              }}
-            >
-              {txt.exhibTitle}
-            </h2>
-            {txt.exhib.map((e, i) => (
-              <TimelineItem key={i} item={e} />
-            ))}
+              <h2 className={styles.sectionTitle} style={{ marginTop: "48px" }}>
+                {txt.memberTitle}
+              </h2>
+              {txt.members.map((m, i) => (
+                <div key={i} className={styles.timelineItem}>
+                  <span className={styles.timelineYear}>{m.year}</span>
+                  <div>
+                    <div className={styles.timelineTitle}>{m.title}</div>
+                    <div className={styles.timelinePlace}>{m.place}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <h2 className={styles.sectionTitle}>{txt.exhibTitle}</h2>
+              {txt.exhib.map((e, i) => (
+                <div key={i} className={styles.timelineItem}>
+                  <span className={styles.timelineYear}>{e.year}</span>
+                  <div>
+                    <div className={styles.timelineTitle}>{e.title}</div>
+                    <div className={styles.timelinePlace}>{e.place}</div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Навыки */}
-        <div>
-          <h2
-            style={{
-              fontFamily: "var(--F)",
-              fontSize: "1.8rem",
-              fontWeight: 300,
-              color: "var(--white)",
-              marginBottom: "32px",
-            }}
-          >
-            {txt.skillsTitle}
-          </h2>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
+        <div className={styles.skillsSection}>
+          <h2 className={styles.sectionTitle}>{txt.skillsTitle}</h2>
+          <div className={styles.skills}>
             {txt.skills.map((skill, i) => (
-              <span
-                key={i}
-                style={{
-                  padding: "8px 20px",
-                  border: "1px solid rgba(255,255,255,0.15)",
-                  fontSize: "0.72rem",
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.5)",
-                  borderRadius: "2px",
-                }}
-              >
+              <span key={i} className={styles.skill}>
                 {skill}
               </span>
             ))}
           </div>
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function TimelineItem({ item }) {
-  return (
-    <div
-      style={{
-        display: "flex",
-        gap: "24px",
-        paddingBottom: "24px",
-        marginBottom: "24px",
-        borderBottom: "1px solid rgba(255,255,255,0.06)",
-      }}
-    >
-      <span
-        style={{
-          fontSize: "0.65rem",
-          letterSpacing: "0.1em",
-          color: "var(--warm)",
-          minWidth: "60px",
-          paddingTop: "4px",
-        }}
-      >
-        {item.year}
-      </span>
-      <div>
-        <div
-          style={{
-            fontSize: "0.9rem",
-            color: "var(--white)",
-            marginBottom: "4px",
-          }}
-        >
-          {item.title}
-        </div>
-        <div style={{ fontSize: "0.75rem", color: "var(--stone)" }}>
-          {item.place}
         </div>
       </div>
     </div>

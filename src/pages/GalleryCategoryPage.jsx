@@ -352,6 +352,7 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { galleryCategories, galleryWorks } from "../data/works";
+import Masonry from "react-masonry-css";
 import styles from "./GalleryCategoryPage.module.css";
 
 export default function GalleryCategoryPage({ lang }) {
@@ -383,7 +384,7 @@ export default function GalleryCategoryPage({ lang }) {
           {lang === "en" ? data.descEn : data.descRu}
         </p>
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           {works.map((work) => (
             <WorkCard
               key={work.id}
@@ -392,7 +393,25 @@ export default function GalleryCategoryPage({ lang }) {
               onClick={() => setLightbox(work)}
             />
           ))}
-        </div>
+        </div> */}
+        <Masonry
+          breakpointCols={{
+            default: 3,
+            1024: 2,
+            640: 2,
+          }}
+          className={styles.masonryGrid}
+          columnClassName={styles.masonryColumn}
+        >
+          {works.map((work) => (
+            <WorkCard
+              key={work.id}
+              work={work}
+              lang={lang}
+              onClick={() => setLightbox(work)}
+            />
+          ))}
+        </Masonry>
       </div>
 
       {lightbox && (

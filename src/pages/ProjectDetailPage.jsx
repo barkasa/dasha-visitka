@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projectCategories, projectWorks } from "../data/works";
+import Masonry from "react-masonry-css";
 import styles from "./ProjectDetailPage.module.css";
 
 export default function ProjectDetailPage({ lang }) {
@@ -89,7 +90,15 @@ export default function ProjectDetailPage({ lang }) {
         </div>
 
         {pages.length > 0 ? (
-          <div className={styles.grid}>
+          <Masonry
+            breakpointCols={{
+              default: 3,
+              1024: 2,
+              640: 2,
+            }}
+            className={styles.masonryGrid}
+            columnClassName={styles.masonryColumn}
+          >
             {pages.map((page, i) => (
               <div
                 key={page.id}
@@ -123,7 +132,7 @@ export default function ProjectDetailPage({ lang }) {
                 </div>
               </div>
             ))}
-          </div>
+          </Masonry>
         ) : (
           <div className={styles.emptyState}>
             {lang === "en"
