@@ -359,7 +359,10 @@ export default function GalleryCategoryPage({ lang }) {
   const { category } = useParams();
   const [lightbox, setLightbox] = useState(null);
   const data = galleryCategories[category];
-  const works = galleryWorks.filter((w) => w.category === category);
+  const works = galleryWorks
+    .filter((w) => w.category === category)
+    .sort((a, b) => b.year - a.year);
+  // новые впереди
 
   if (!data)
     return (
