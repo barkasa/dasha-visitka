@@ -1,0 +1,283 @@
+.page {
+  background: var(--ink);
+  min-height: 100vh;
+  padding: 120px 48px 80px;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.backLink {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--stone);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 48px;
+  transition: color 0.2s;
+}
+
+.backLink:hover {
+  color: var(--warm);
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.tag {
+  font-size: 0.62rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.tagLine {
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+
+.title {
+  font-family: var(--F);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  font-weight: 300;
+  line-height: 0.95;
+  margin-bottom: 16px;
+}
+
+.titleAccent {
+  font-style: italic;
+  color: var(--warm);
+}
+
+.meta {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 24px;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.metaLabel {
+  font-size: 0.58rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--stone);
+}
+
+.metaVal {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.desc {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3px;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  background: #1a1814;
+  aspect-ratio: 3 / 4;
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .cardInner {
+  transform: scale(1.04);
+}
+
+.cardImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.cardPlaceholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cardNum {
+  font-family: var(--F);
+  font-size: 2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.cardCaption {
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.cardOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(15, 15, 13, 0.85) 0%,
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.3s;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+
+.card:hover .cardOverlay {
+  opacity: 1;
+}
+
+.cardCaptionHover {
+  font-size: 0.75rem;
+  color: var(--warm);
+  letter-spacing: 0.1em;
+}
+
+/* ── LIGHTBOX ── */
+.lightboxBg {
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.97);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.lightboxImg {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.lightboxClose {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+  padding: 8px 20px;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.lightboxClose:hover {
+  border-color: var(--warm);
+  color: var(--warm);
+}
+
+.lightboxNav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--white);
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.lightboxNav:hover {
+  border-color: var(--warm);
+  color: var(--warm);
+}
+
+.lightboxPrev {
+  left: 24px;
+}
+
+.lightboxNext {
+  right: 24px;
+}
+
+.lightboxCaption {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.emptyState {
+  text-align: center;
+  padding: 80px 0;
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── MOBILE ── */
+@media (max-width: 768px) {
+  .page {
+    padding: 100px 20px 60px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .meta {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .lightboxNav {
+    display: none;
+  }
+}

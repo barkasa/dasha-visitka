@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import GalleryCategoryPage from "./pages/GalleryCategoryPage";
 import ProjectsCategoryPage from "./pages/ProjectsCategoryPage";
 import AboutPage from "./pages/AboutPage";
+import ProjectDetailPage from "./pages/ProjectDetailPage";
 function App() {
   const [lang, setLang] = useState("en");
 
@@ -25,6 +26,10 @@ function App() {
         <Route path="/success" element={<SuccessPage lang={lang} />} />
         <Route path="*" element={<NotFoundPage lang={lang} />} />
         <Route path="/about" element={<AboutPage lang={lang} />} />
+        <Route
+          path="/projects/:category/:slug"
+          element={<ProjectDetailPage lang={lang} />}
+        />
         <Route
           path="/projects/:category"
           element={<ProjectsCategoryPage lang={lang} />}
