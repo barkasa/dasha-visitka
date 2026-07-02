@@ -6,6 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaArtstation,
+  FaFacebook,
 } from "react-icons/fa";
 import styles from "./Contacts.module.css";
 
@@ -102,6 +103,11 @@ export default function ContactsPage({ lang }) {
       label: "ArtStation",
       icon: <FaArtstation size={28} />,
       url: "https://mdaria.artstation.com/",
+    },
+    {
+      label: "Facebook",
+      icon: <FaFacebook size={28} />,
+      url: "https://facebook.com/daria.morozova.31",
     },
   ];
 

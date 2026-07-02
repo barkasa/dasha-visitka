@@ -7,6 +7,7 @@ export default function Header({ lang, setLang }) {
   const location = useLocation();
 
   const links = [
+    { to: "/about", en: "About", ru: "О себе" },
     { to: "/projects", en: "Projects", ru: "Проекты" },
     { to: "/gallery", en: "Gallery", ru: "Галерея" },
     { to: "/contacts", en: "Contact", ru: "Контакты" },

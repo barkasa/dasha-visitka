@@ -34,6 +34,7 @@ export default function Footer({ lang }) {
           <h4 className={styles.colTitle}>{txt.menu}</h4>
           {[
             ["/", lang === "en" ? "Home" : "Главная"],
+            ["/about", lang === "en" ? "About" : "О себе"],
             ["/projects", lang === "en" ? "Projects" : "Проекты"],
             ["/gallery", lang === "en" ? "Gallery" : "Галерея"],
             ["/contacts", lang === "en" ? "Contact" : "Контакты"],
@@ -50,13 +51,14 @@ export default function Footer({ lang }) {
           {[
             ["WhatsApp", "https://wa.me/+491781047636"],
             ["Telegram", "https://t.me/daria_kunst"],
-            ["Instagram", "https://instagram.com/itsmedaria.m"],
+
             ["Instagram-art", "https://instagram.com/mdari.a_kunst"],
             [
               "LinkedIn",
               "https://www.linkedin.com/in/daria-morozova-54201015/",
             ],
             ["ArtStation", "https://mdaria.artstation.com/"],
+            ["Facebook", "https://facebook.com/daria.morozova.31"],
           ].map(([label, url]) => (
             <a
               key={label}

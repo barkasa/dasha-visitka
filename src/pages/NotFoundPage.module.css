@@ -1,0 +1,47 @@
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: var(--ink);
+  color: var(--white);
+  text-align: center;
+  padding: 48px;
+}
+
+.tag {
+  font-size: 0.65rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--stone);
+  margin-bottom: 24px;
+}
+
+.title {
+  font-family: var(--F);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 300;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.titleAccent {
+  font-style: italic;
+  color: var(--warm);
+}
+
+.link {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  border-bottom: 1px solid var(--warm);
+  padding-bottom: 4px;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--warm);
+}
