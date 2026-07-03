@@ -134,6 +134,193 @@ export const galleryWorks = [
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_8.jpg",
   },
+  {
+    id: 9,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_9.jpg",
+  },
+  {
+    id: 10,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_10.jpg",
+  },
+  {
+    id: 11,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_11.jpg",
+  },
+  {
+    id: 12,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_12.jpg",
+  },
+  {
+    id: 13,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_13.jpg",
+  },
+  {
+    id: 14,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_14.jpg",
+  },
+  {
+    id: 15,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_15.jpg",
+  },
+  {
+    id: 16,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_16.jpg",
+  },
+  {
+    id: 17,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_17.jpg",
+  },
+  {
+    id: 18,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_18.jpg",
+  },
+  {
+    id: 19,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_19.jpg",
+  },
+  {
+    id: 20,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_20.jpg",
+  },
+  {
+    id: 21,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_21.jpg",
+  },
+  {
+    id: 22,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_22.jpg",
+  },
+  {
+    id: 23,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_23.jpg",
+  },
+  {
+    id: 24,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_24.jpg",
+  },
+  {
+    id: 25,
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_25.jpg",
+  },
 
   {
     id: 9,

@@ -36,11 +36,7 @@
   transition: color 0.2s;
 }
 
-.navLinkActive {
-  color: var(--white);
-}
 /* //////// */
-/* Существующие стили оставляем, но обновляем .navLink и добавляем .navLinkActive */
 
 .navLink {
   font-size: 0.68rem;
