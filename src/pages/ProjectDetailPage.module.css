@@ -172,7 +172,9 @@
   color: var(--warm);
   letter-spacing: 0.1em;
 }
-
+.card {
+  cursor: pointer;
+}
 /* ── LIGHTBOX ── */
 .lightboxBg {
   position: fixed;

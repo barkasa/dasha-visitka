@@ -39,7 +39,56 @@
 .navLinkActive {
   color: var(--white);
 }
+/* //////// */
+/* Существующие стили оставляем, но обновляем .navLink и добавляем .navLinkActive */
 
+.navLink {
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.2s;
+  position: relative; /* добавляем */
+  width: fit-content; /* добавляем */
+}
+
+/* Добавляем подчеркивание с анимацией из центра */
+.navLink::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  right: 50%;
+  height: 1px;
+  background: var(
+    --warm,
+    #d4a574
+  ); /* используем вашу переменную или запасной цвет */
+  transition:
+    left 0.3s ease,
+    right 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--white);
+}
+
+.navLink:hover::after {
+  left: 0;
+  right: 0;
+}
+
+.navLinkActive {
+  color: var(--white);
+}
+
+/* Для активной ссылки тоже показываем подчеркивание */
+.navLinkActive::after {
+  left: 0;
+  right: 0;
+}
+/* ////////// */
 .langBtn {
   font-size: 0.68rem;
   letter-spacing: 0.12em;

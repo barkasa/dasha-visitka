@@ -140,7 +140,9 @@
   text-transform: uppercase;
   color: var(--warm);
 }
-
+.card {
+  cursor: pointer;
+}
 /* ── LIGHTBOX ── */
 .lightboxBg {
   position: fixed;
