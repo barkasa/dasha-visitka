@@ -12,11 +12,13 @@ import GalleryCategoryPage from "./pages/GalleryCategoryPage";
 import ProjectsCategoryPage from "./pages/ProjectsCategoryPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
   const [lang, setLang] = useState("en");
 
   return (
     <div>
+      <ScrollToTop />
       <Header lang={lang} setLang={setLang} />
       <Routes>
         <Route path="/" element={<Home lang={lang} />} />

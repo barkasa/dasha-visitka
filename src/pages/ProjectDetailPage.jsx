@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projectCategories, projectWorks } from "../data/works";
 import Masonry from "react-masonry-css";
+import PageTitle from "../components/PageTitle";
 import styles from "./ProjectDetailPage.module.css";
 
 export default function ProjectDetailPage({ lang }) {
@@ -39,6 +40,7 @@ export default function ProjectDetailPage({ lang }) {
 
   return (
     <div className={styles.page}>
+      <PageTitle title={lang === "en" ? "Projects" : "Проекты"} />
       <div className={styles.inner}>
         <Link to={`/projects/${category}`} className={styles.backLink}>
           ←{" "}

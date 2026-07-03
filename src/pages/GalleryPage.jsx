@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { galleryCategories, galleryWorks } from "../data/works";
+import PageTitle from "../components/PageTitle";
 import styles from "./GalleryPage.module.css";
 
 export default function GalleryPage({ lang }) {
   return (
     <div className={styles.page}>
+      <PageTitle title={lang === "en" ? "Gallery" : "Галерея"} />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

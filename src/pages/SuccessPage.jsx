@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
+import PageTitle from "../components/PageTitle";
 import styles from "./SuccessPage.module.css";
 
 export default function SuccessPage({ lang }) {
   return (
     <div className={styles.page}>
+      <PageTitle title={lang === "en" ? "Message Sent" : "Отправлено"} />
       <p className={styles.tag}>
         ✓ {lang === "en" ? "Message Sent" : "Сообщение отправлено"}
       </p>

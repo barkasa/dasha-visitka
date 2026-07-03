@@ -1,3 +1,4 @@
+import PageTitle from "../components/PageTitle";
 import styles from "./AboutPage.module.css";
 
 export default function AboutPage({ lang }) {
@@ -139,6 +140,8 @@ export default function AboutPage({ lang }) {
 
   return (
     <div className={styles.page}>
+      // в return первой строкой:
+      <PageTitle title={lang === "en" ? "About" : "О себе"} />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

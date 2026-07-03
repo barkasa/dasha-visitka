@@ -8,6 +8,7 @@ import {
   FaArtstation,
   FaFacebook,
 } from "react-icons/fa";
+import PageTitle from "../components/PageTitle";
 import styles from "./Contacts.module.css";
 
 export default function ContactsPage({ lang }) {
@@ -113,6 +114,7 @@ export default function ContactsPage({ lang }) {
 
   return (
     <div className={styles.page}>
+      <PageTitle title={lang === "en" ? "Contact" : "Контакты"} />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

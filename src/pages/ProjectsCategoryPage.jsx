@@ -1,5 +1,6 @@
 import { useParams, Link } from "react-router-dom";
 import { projectCategories, projectWorks } from "../data/works";
+import PageTitle from "../components/PageTitle";
 import styles from "./ProjectsCategoryPage.module.css";
 
 export default function ProjectsCategoryPage({ lang }) {
@@ -18,6 +19,7 @@ export default function ProjectsCategoryPage({ lang }) {
 
   return (
     <div className={styles.page}>
+      <PageTitle title={lang === "en" ? "Projects" : "Проекты"} />
       <div className={styles.inner}>
         <Link to="/projects" className={styles.backLink}>
           ← {lang === "en" ? "Back to Projects" : "Назад к проектам"}
