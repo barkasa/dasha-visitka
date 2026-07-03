@@ -25,7 +25,7 @@ export default function Header({ lang, setLang }) {
             <Link
               key={l.to}
               to={l.to}
-              className={`${styles.navLink} ${location.pathname === l.to ? styles.navLinkActive : ""}`}
+              className={`${styles.navLink} ${location.pathname.startsWith(l.to) ? styles.navLinkActive : ""}`}
             >
               {lang === "en" ? l.en : l.ru}
             </Link>

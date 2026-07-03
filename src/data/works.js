@@ -47,7 +47,7 @@ export const projectCategories = {
 // ──────────────────────────────────────
 export const galleryWorks = [
   {
-    id: 1,
+    id: "batik-1",
     category: "batik",
     title: "Silk Batik I",
     titleRu: "Батик на шёлке I",
