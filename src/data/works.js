@@ -59,7 +59,7 @@ export const galleryWorks = [
   },
   {
     id: 2,
-    category: "batik",
+    category: "batik-2",
     title: "Silk Batik II",
     titleRu: "Батик на шёлке II",
     year: "2024",
@@ -69,7 +69,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_2.jpg",
   },
   {
-    id: 3,
+    id: "batik-3",
     category: "batik",
     title: "Silk Batik III",
     titleRu: "Батик на шёлке III",
@@ -80,7 +80,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_3.jpg",
   },
   {
-    id: 4,
+    id: "batik-4",
     category: "batik",
     title: "Silk Batik IV",
     titleRu: "Батик на шёлке IV",
@@ -91,7 +91,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_4.jpg",
   },
   {
-    id: 5,
+    id: "batik-5",
     category: "batik",
     title: "Silk Batik V",
     titleRu: "Батик на шёлке V",
@@ -102,7 +102,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_5.jpg",
   },
   {
-    id: 6,
+    id: "batik-6",
     category: "batik",
     title: "Silk Batik VI",
     titleRu: "Батик на шёлке VI",
@@ -113,7 +113,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_6.jpg",
   },
   {
-    id: 7,
+    id: "batik-7",
     category: "batik",
     title: "Silk Batik VII",
     titleRu: "Батик на шёлке VII",
@@ -124,7 +124,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_7.jpg",
   },
   {
-    id: 8,
+    id: "batik-8",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -135,7 +135,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_8.jpg",
   },
   {
-    id: 9,
+    id: "batik-9",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -146,7 +146,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_9.jpg",
   },
   {
-    id: 10,
+    id: "batik-10",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -157,7 +157,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_10.jpg",
   },
   {
-    id: 11,
+    id: "batik-11",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -168,7 +168,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_11.jpg",
   },
   {
-    id: 12,
+    id: "batik-12",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -179,7 +179,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_12.jpg",
   },
   {
-    id: 13,
+    id: "batik-13",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -190,7 +190,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_13.jpg",
   },
   {
-    id: 14,
+    id: "batik-14",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -201,7 +201,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_14.jpg",
   },
   {
-    id: 15,
+    id: "batik-15",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -212,7 +212,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_15.jpg",
   },
   {
-    id: 16,
+    id: "batik-16",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -223,7 +223,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_16.jpg",
   },
   {
-    id: 17,
+    id: "batik-17",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -234,7 +234,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_17.jpg",
   },
   {
-    id: 18,
+    id: "batik-18",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -245,7 +245,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_18.jpg",
   },
   {
-    id: 19,
+    id: "batik-19",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -256,7 +256,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_19.jpg",
   },
   {
-    id: 20,
+    id: "batik-20",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -267,7 +267,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_20.jpg",
   },
   {
-    id: 21,
+    id: "batik-21",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -278,7 +278,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_21.jpg",
   },
   {
-    id: 22,
+    id: "batik-22",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -289,7 +289,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_22.jpg",
   },
   {
-    id: 23,
+    id: "batik-23",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -300,7 +300,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_23.jpg",
   },
   {
-    id: 24,
+    id: "batik-24",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -311,7 +311,7 @@ export const galleryWorks = [
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_24.jpg",
   },
   {
-    id: 25,
+    id: "batik-25",
     category: "batik",
     title: "Silk Batik VIII",
     titleRu: "Батик на шёлке VIII",
@@ -321,9 +321,405 @@ export const galleryWorks = [
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_25.jpg",
   },
+  {
+    id: "batik-26",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_26.jpg",
+  },
+  {
+    id: "batik-27",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_27.jpg",
+  },
+  {
+    id: "batik-28",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_28.jpg",
+  },
+  {
+    id: "batik-29",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_29.jpg",
+  },
+  {
+    id: "batik-30",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_30.jpg",
+  },
+  {
+    id: "batik-31",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_31.jpg",
+  },
+  {
+    id: "batik-32",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_32.jpg",
+  },
+  {
+    id: "batik-33",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_33.jpg",
+  },
+  {
+    id: "batik-34",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_34.jpg",
+  },
+  {
+    id: "batik-35",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_35.jpg",
+  },
+  {
+    id: "batik-36",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_36.jpg",
+  },
+  {
+    id: "batik-37",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_37.jpg",
+  },
+  {
+    id: "batik-38",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_38.jpg",
+  },
+  {
+    id: "batik-39",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_39.jpg",
+  },
+  {
+    id: "batik-40",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_40.jpg",
+  },
+  {
+    id: "batik-41",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_41.jpg",
+  },
+  {
+    id: "batik-42",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_42.jpg",
+  },
+  {
+    id: "batik-43",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_43.jpg",
+  },
+  {
+    id: "batik-44",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_44.jpg",
+  },
+  {
+    id: "batik-45",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_45.jpg",
+  },
+  {
+    id: "batik-46",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_46.jpg",
+  },
+  {
+    id: "batik-47",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_47.jpg",
+  },
+  {
+    id: "batik-48",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_48.jpg",
+  },
+  {
+    id: "batik-49",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_49.jpg",
+  },
+  {
+    id: "batik-50",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_50.jpg",
+  },
+  {
+    id: "batik-51",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_51.jpg",
+  },
+  {
+    id: "batik-52",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_52.jpg",
+  },
+  {
+    id: "batik-53",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_53.jpg",
+  },
+  {
+    id: "batik-54",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_54.jpg",
+  },
+  {
+    id: "batik-55",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_55.jpg",
+  },
+  {
+    id: "batik-56",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_56.jpg",
+  },
+  {
+    id: "batik-57",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_57.jpg",
+  },
+  {
+    id: "batik-58",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_58.jpg",
+  },
+  {
+    id: "batik-59",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_59.jpg",
+  },
+  {
+    id: "batik-60",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_60.jpg",
+  },
+  {
+    id: "batik-61",
+    category: "batik",
+    title: "Silk Batik VIII",
+    titleRu: "Батик на шёлке VIII",
+    year: "2021",
+    sub: "Painting",
+    subRu: "Картина",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_61.jpg",
+  },
 
   {
-    id: 9,
+    id: "painting-1",
     category: "painting",
     title: "Acrylic Series I",
     titleRu: "Акрил I",
@@ -332,7 +728,7 @@ export const galleryWorks = [
     subRu: "Акрил на холсте",
   },
   {
-    id: 10,
+    id: "painting-2",
     category: "painting",
     title: "Oil Study",
     titleRu: "Масляный этюд",
@@ -341,7 +737,7 @@ export const galleryWorks = [
     subRu: "Масло на холсте",
   },
   {
-    id: 11,
+    id: "painting-3",
     category: "painting",
     title: "Alcohol Ink I",
     titleRu: "Алкогольные чернила I",
@@ -350,7 +746,7 @@ export const galleryWorks = [
     subRu: "Алкогольные чернила",
   },
   {
-    id: 12,
+    id: "painting-4",
     category: "painting",
     title: "Watercolour Series",
     titleRu: "Акварельная серия",
@@ -360,7 +756,7 @@ export const galleryWorks = [
   },
 
   {
-    id: 13,
+    id: "decorative-1",
     category: "decorative",
     title: "Plaster Relief I",
     titleRu: "Гипсовый рельеф I",
@@ -369,7 +765,7 @@ export const galleryWorks = [
     subRu: "Гипс",
   },
   {
-    id: 14,
+    id: "decorative-2",
     category: "decorative",
     title: "Decorative Panel",
     titleRu: "Декоративное панно",
@@ -381,7 +777,7 @@ export const galleryWorks = [
 
 export const projectWorks = [
   {
-    id: 1,
+    id: "illustration-1",
     category: "illustration",
     slug: "mozart",
     title: "Mozart",
@@ -394,7 +790,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 2,
+    id: "illustration-2",
     category: "illustration",
     slug: "mozart-friends",
     title: "Mozart and His Friends",
@@ -407,7 +803,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 3,
+    id: "illustration-3",
     category: "illustration",
     slug: "inner-instincts",
     title: "Inner Instincts",
@@ -421,7 +817,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 4,
+    id: "graphic-1",
     category: "graphic",
     slug: "brand-identity",
     title: "Brand Identity",
@@ -432,7 +828,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 5,
+    id: "graphic-2",
     category: "graphic",
     slug: "product-catalogue",
     title: "Product Catalogue",
@@ -443,7 +839,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 6,
+    id: "graphic-3",
     category: "graphic",
     slug: "poster-series",
     title: "Poster Series",
@@ -454,7 +850,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 7,
+    id: "graphic-4",
     category: "graphic",
     slug: "packaging-design",
     title: "Packaging Design",
@@ -465,7 +861,7 @@ export const projectWorks = [
     pages: [],
   },
   {
-    id: 8,
+    id: "graphic-5",
     category: "graphic",
     slug: "technical-drawings",
     title: "Technical Drawings",
