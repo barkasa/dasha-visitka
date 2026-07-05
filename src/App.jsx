@@ -15,11 +15,13 @@ import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
 import ImpressumPage from "./pages/ImpressumPage";
 import DatenschutzPage from "./pages/DatenschutzPage";
+import Preloader from "./components/Preloader";
 function App() {
   const [lang, setLang] = useState("en");
 
   return (
     <div>
+      <Preloader lang={lang} />
       <ScrollToTop />
       <Header lang={lang} setLang={setLang} />
       <Routes>
