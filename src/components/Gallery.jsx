@@ -26,10 +26,14 @@ export default function Gallery({ lang }) {
   ];
 
   const itemWidth = 380;
-
+  const [currentIndex, setCurrentIndex] = useState(0);
   function slide(dir) {
     const max = (works.length - 3) * itemWidth;
-    setOffset((prev) => Math.max(0, Math.min(prev + dir * itemWidth, max)));
+    const newOffset = Math.max(0, Math.min(offset + dir * itemWidth, max));
+    setOffset(newOffset);
+    setCurrentIndex((prev) =>
+      Math.max(0, Math.min(prev + dir, works.length - 1)),
+    );
   }
 
   function handleTouchStart(e) {
@@ -64,6 +68,17 @@ export default function Gallery({ lang }) {
           <button className={styles.btn} onClick={() => slide(-1)}>
             ←
           </button>
+          <span
+            style={{
+              fontSize: "0.65rem",
+              letterSpacing: "0.1em",
+              color: "var(--stone)",
+              minWidth: "40px",
+              textAlign: "center",
+            }}
+          >
+            {currentIndex + 1} / {works.length}
+          </span>
           <button className={styles.btn} onClick={() => slide(1)}>
             →
           </button>
