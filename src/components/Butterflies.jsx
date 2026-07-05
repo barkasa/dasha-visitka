@@ -70,7 +70,7 @@ export default function Butterflies({ trigger, originX, originY }) {
             transition: b.moving
               ? `left ${b.duration}ms cubic-bezier(0.4,0,0.2,1) ${b.delay}ms,
                top ${b.duration}ms cubic-bezier(0.4,0,0.2,1) ${b.delay}ms,
-               opacity 0.8s ease`
+               opacity 0.5s ease`
               : "none",
           }}
         >
