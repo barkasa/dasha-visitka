@@ -47,13 +47,27 @@ export default function About({ lang }) {
         </p>
 
         <div className={styles.layout}>
-          <div className={styles.photoWrap}>
+          {/* <div className={styles.photoWrap}>
             <div className={styles.photo}>
               <span className={styles.photoText}>{txt.photo}</span>
             </div>
             <div className={styles.photoLabel}>Daria Morozova</div>
+          </div> */}
+          <div className={styles.photo}>
+            <img
+              src="https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/foto/Hero-foto.jpeg"
+              alt="Daria Morozova"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                objectPosition: "80% 40%",
+                filter: "grayscale(40%) contrast(1.1)",
+                display: "block",
+              }}
+              loading="lazy"
+            />
           </div>
-
           <div>
             <h2 className={styles.headline}>
               {txt.headline[0]}

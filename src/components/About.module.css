@@ -38,15 +38,20 @@
   position: relative;
 }
 
-.photo {
+/* .photo {
   width: 100%;
   aspect-ratio: 3 / 4;
   background: linear-gradient(160deg, #d5c8b8 0%, #b8a898 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+} */
+.photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  position: relative;
 }
-
 .photoText {
   font-size: 0.62rem;
   letter-spacing: 0.18em;
