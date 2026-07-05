@@ -1,7 +1,7 @@
 import PageTitle from "../components/PageTitle";
-import styles from "./AboutPage.module.css";
+import styles from "./LegalPage.module.css";
 
-export default function ImpressumPage({ lang }) {
+export default function ImpressumPage() {
   return (
     <div className={styles.page}>
       <PageTitle title="Impressum" />
@@ -11,31 +11,12 @@ export default function ImpressumPage({ lang }) {
           Legal
         </p>
 
-        <h1 className={styles.name} style={{ marginBottom: "48px" }}>
-          Impressum
-        </h1>
+        <h1 className={styles.title}>Impressum</h1>
 
-        <div
-          style={{
-            color: "rgba(255,255,255,0.6)",
-            lineHeight: 1.8,
-            fontSize: "0.9rem",
-          }}
-        >
-          <p style={{ marginBottom: "32px" }}>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Angaben gemäß § 5 TMG
-            </strong>
-            <br />
-            <br />
-            Daria Morozova
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>Angaben gemäß § 5 TMG</p>
+          <p className={styles.text}>
+            <span className={styles.highlight}>Daria Morozova</span>
             <br />
             [Straße und Hausnummer]
             <br />
@@ -43,95 +24,50 @@ export default function ImpressumPage({ lang }) {
             <br />
             Deutschland
           </p>
+        </div>
 
-          <p style={{ marginBottom: "32px" }}>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Kontakt
-            </strong>
-            <br />
-            <br />
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>Kontakt</p>
+          <p className={styles.text}>
             Telefon: +49 178 1047636
             <br />
-            E-Mail: dasha.led@gmail.com
+            E-Mail: <a href="mailto:dasha.led@gmail.com">dasha.led@gmail.com</a>
           </p>
+        </div>
 
-          <p style={{ marginBottom: "32px" }}>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Steuernummer
-            </strong>
-            <br />
-            <br />
-            [Steuernummer eintragen]
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>Steuernummer</p>
+          <p className={styles.text}>[Steuernummer eintragen]</p>
+        </div>
+
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>
+            Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
           </p>
-
-          <p style={{ marginBottom: "32px" }}>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
-            </strong>
-            <br />
-            <br />
-            Daria Morozova
+          <p className={styles.text}>
+            <span className={styles.highlight}>Daria Morozova</span>
             <br />
             [Adresse]
           </p>
+        </div>
 
-          <p style={{ marginBottom: "32px" }}>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Haftungsausschluss
-            </strong>
-            <br />
-            <br />
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>Haftungsausschluss</p>
+          <p className={styles.text}>
             Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für
             die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können
             wir jedoch keine Gewähr übernehmen.
           </p>
+        </div>
 
-          <p>
-            <strong
-              style={{
-                color: "var(--white)",
-                letterSpacing: "0.1em",
-                fontSize: "0.7rem",
-                textTransform: "uppercase",
-              }}
-            >
-              Urheberrecht
-            </strong>
-            <br />
-            <br />
+        <div className={styles.section}>
+          <p className={styles.sectionTitle}>Urheberrecht</p>
+          <p className={styles.text}>
             Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
             diesen Seiten unterliegen dem deutschen Urheberrecht. Die
             Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
             Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
-            schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+            schriftlichen Zustimmung von Daria Morozova.
           </p>
         </div>
       </div>

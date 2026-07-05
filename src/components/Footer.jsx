@@ -93,28 +93,19 @@ export default function Footer({ lang }) {
           >
             Impressum
           </Link>
+          <Link
+            to="/datenschutz"
+            className={styles.footerBottomText}
+            style={{ textDecoration: "none" }}
+          >
+            Datenschutz
+          </Link>
         </div>
         <p className={styles.footerBottomText}>
           {lang === "en"
             ? "Design & Dev — Ivan Morozov"
             : "Дизайн и разработка — Иван Морозов"}
         </p>
-      </div>
-      <div style={{ display: "flex", gap: "24px" }}>
-        <Link
-          to="/impressum"
-          className={styles.footerBottomText}
-          style={{ textDecoration: "none" }}
-        >
-          Impressum
-        </Link>
-        <Link
-          to="/datenschutz"
-          className={styles.footerBottomText}
-          style={{ textDecoration: "none" }}
-        >
-          Datenschutz
-        </Link>
       </div>
     </footer>
   );

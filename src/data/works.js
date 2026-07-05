@@ -726,7 +726,26 @@ export const galleryWorks = [
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_61.jpg",
   },
-
+  // РОСПИСЬ ЗОНТОВ
+  {
+    id: "umbrella-1",
+    category: "umbrella",
+    title: "Umbrella I",
+    titleRu: "Зонт I",
+    year: "2024",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+  },
+  {
+    id: "umbrella-2",
+    category: "umbrella",
+    title: "Umbrella II",
+    titleRu: "Зонт II",
+    year: "2024",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+  },
+  // painting
   {
     id: "painting-1",
     category: "painting",
