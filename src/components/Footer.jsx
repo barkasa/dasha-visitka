@@ -100,6 +100,22 @@ export default function Footer({ lang }) {
             : "Дизайн и разработка — Иван Морозов"}
         </p>
       </div>
+      <div style={{ display: "flex", gap: "24px" }}>
+        <Link
+          to="/impressum"
+          className={styles.footerBottomText}
+          style={{ textDecoration: "none" }}
+        >
+          Impressum
+        </Link>
+        <Link
+          to="/datenschutz"
+          className={styles.footerBottomText}
+          style={{ textDecoration: "none" }}
+        >
+          Datenschutz
+        </Link>
+      </div>
     </footer>
   );
 }

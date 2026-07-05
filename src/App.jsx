@@ -14,6 +14,7 @@ import AboutPage from "./pages/AboutPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
 import ImpressumPage from "./pages/ImpressumPage";
+import DatenschutzPage from "./pages/DatenschutzPage";
 function App() {
   const [lang, setLang] = useState("en");
 
@@ -30,6 +31,7 @@ function App() {
         <Route path="*" element={<NotFoundPage lang={lang} />} />
         <Route path="/about" element={<AboutPage lang={lang} />} />
         <Route path="/impressum" element={<ImpressumPage lang={lang} />} />
+        <Route path="/datenschutz" element={<DatenschutzPage lang={lang} />} />
         <Route
           path="/projects/:category/:slug"
           element={<ProjectDetailPage lang={lang} />}
