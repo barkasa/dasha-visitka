@@ -38,21 +38,12 @@ export default function GalleryCategoryPage({ lang }) {
           {lang === "en" ? data.descEn : data.descRu}
         </p>
 
-        {/* <div className={styles.grid}>
-          {works.map((work) => (
-            <WorkCard
-              key={work.id}
-              work={work}
-              lang={lang}
-              onClick={() => setLightbox(work)}
-            />
-          ))}
-        </div> */}
         <Masonry
           breakpointCols={{
             default: 3,
-            1024: 2,
-            640: 2,
+            1024: 3,
+            768: 2,
+            480: 2,
           }}
           className={styles.masonryGrid}
           columnClassName={styles.masonryColumn}
@@ -127,7 +118,12 @@ function WorkCard({ work, lang, onClick }) {
     <div onClick={onClick} className={styles.card}>
       <div className={styles.cardInner}>
         {work.image ? (
-          <img src={work.image} alt={work.title} className={styles.cardImg} />
+          <img
+            src={work.image}
+            alt={work.title}
+            className={styles.cardImg}
+            loading="lazy"
+          />
         ) : (
           <span className={styles.cardLabel}>
             {lang === "en" ? work.sub : work.subRu}

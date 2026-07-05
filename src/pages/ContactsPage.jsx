@@ -9,6 +9,7 @@ import {
   FaFacebook,
 } from "react-icons/fa";
 import PageTitle from "../components/PageTitle";
+import useInView from "../hooks/useInView";
 import styles from "./Contacts.module.css";
 
 export default function ContactsPage({ lang }) {
@@ -111,9 +112,12 @@ export default function ContactsPage({ lang }) {
       url: "https://facebook.com/daria.morozova.31",
     },
   ];
-
+  const [ref, inView] = useInView();
   return (
-    <div className={styles.page}>
+    <div
+      ref={ref}
+      className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
+    >
       <PageTitle title={lang === "en" ? "Contact" : "Контакты"} />
       <div className={styles.inner}>
         <p className={styles.tag}>

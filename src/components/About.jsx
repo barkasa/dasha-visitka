@@ -1,3 +1,4 @@
+import useInView from "../hooks/useInView";
 import styles from "./About.module.css";
 
 export default function About({ lang }) {
@@ -32,9 +33,13 @@ export default function About({ lang }) {
     },
   };
   const txt = t[lang];
-
+  const [ref, inView] = useInView();
   return (
-    <section id="about" className={styles.about}>
+    <section
+      id="about"
+      ref={ref}
+      className={`${styles.about} fadeIn ${inView ? "visible" : ""}`}
+    >
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine}></span>

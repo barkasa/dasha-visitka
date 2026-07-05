@@ -113,6 +113,7 @@ export default function ProjectDetailPage({ lang }) {
                       src={page.image}
                       alt={page.caption || `Page ${i + 1}`}
                       className={styles.cardImg}
+                      loading="lazy"
                     />
                   ) : (
                     <div className={styles.cardPlaceholder}>

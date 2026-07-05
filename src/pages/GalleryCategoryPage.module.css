@@ -42,21 +42,18 @@
   line-height: 1.7;
 }
 
-/* .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3px;
-} */
 .masonryGrid {
   display: flex;
   gap: 4px;
   width: 100%;
+  align-items: flex-start;
 }
 
 .masonryColumn {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  flex: 1;
 }
 
 .card {
@@ -88,6 +85,8 @@
   width: 100%;
   height: auto;
   display: block;
+  max-height: 500px;
+  object-fit: cover;
 }
 
 .cardLabel {

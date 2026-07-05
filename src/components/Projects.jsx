@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import useInView from "../hooks/useInView";
 import styles from "./Projects.module.css";
 
 export default function Projects({ lang }) {
@@ -29,9 +30,13 @@ export default function Projects({ lang }) {
       icon: "✏️",
     },
   ];
-
+  const [ref, inView] = useInView();
   return (
-    <section id="projects" className={styles.projects}>
+    <section
+      id="projects"
+      ref={ref}
+      className={`${styles.projects} fadeIn ${inView ? "visible" : ""}`}
+    >
       <div className={styles.inner}>
         <div className={styles.header}>
           <h2 className={styles.title}>

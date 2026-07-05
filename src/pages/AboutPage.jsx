@@ -1,4 +1,5 @@
 import PageTitle from "../components/PageTitle";
+import useInView from "../hooks/useInView";
 import styles from "./AboutPage.module.css";
 
 export default function AboutPage({ lang }) {
@@ -137,10 +138,12 @@ export default function AboutPage({ lang }) {
     },
   };
   const txt = t[lang];
-
+  const [ref, inView] = useInView();
   return (
-    <div className={styles.page}>
-      // в return первой строкой:
+    <div
+      ref={ref}
+      className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
+    >
       <PageTitle title={lang === "en" ? "About" : "О себе"} />
       <div className={styles.inner}>
         <p className={styles.tag}>

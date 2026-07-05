@@ -2,11 +2,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { projectCategories, projectWorks } from "../data/works";
 import PageTitle from "../components/PageTitle";
+import useInView from "../hooks/useInView";
 import styles from "./ProjectsPage.module.css";
 
 export default function ProjectsPage({ lang }) {
+  const [ref, inView] = useInView();
   return (
-    <div className={styles.page}>
+    <div
+      ref={ref}
+      className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
+    >
       <PageTitle title={lang === "en" ? "Projects" : "Проекты"} />
       <div className={styles.inner}>
         <p className={styles.tag}>

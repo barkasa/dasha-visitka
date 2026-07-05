@@ -2,11 +2,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { galleryCategories, galleryWorks } from "../data/works";
 import PageTitle from "../components/PageTitle";
+import useInView from "../hooks/useInView";
 import styles from "./GalleryPage.module.css";
 
 export default function GalleryPage({ lang }) {
+  const [ref, inView] = useInView();
   return (
-    <div className={styles.page}>
+    <div
+      ref={ref}
+      className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
+    >
       <PageTitle title={lang === "en" ? "Gallery" : "Галерея"} />
       <div className={styles.inner}>
         <p className={styles.tag}>
