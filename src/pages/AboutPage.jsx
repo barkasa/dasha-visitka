@@ -144,7 +144,14 @@ export default function AboutPage({ lang }) {
       ref={ref}
       className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
     >
-      <PageTitle title={lang === "en" ? "About" : "О себе"} />
+      <PageTitle
+        title={lang === "en" ? "About" : "О себе"}
+        description={
+          lang === "en"
+            ? "About Daria Morozova — graphic designer, artist and illustrator. Member of the Union of Artists of Kyrgyzstan."
+            : "О Дарье Морозовой — графический дизайнер, художник и иллюстратор."
+        }
+      />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

@@ -91,7 +91,11 @@ export default function Hero({ lang }) {
 
   return (
     <section id="home" className={styles.hero}>
-      <div className={styles.photoPlaceholder} onMouseEnter={handlePhotoHover}>
+      <div
+        className={styles.photoPlaceholder}
+        onMouseEnter={handlePhotoHover}
+        onTouchStart={handlePhotoHover}
+      >
         <img
           src="https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/Foto/photo_2026-06-30_19-12-07.jpg"
           alt="Daria Morozova"

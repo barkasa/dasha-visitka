@@ -12,7 +12,14 @@ export default function GalleryPage({ lang }) {
       ref={ref}
       className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
     >
-      <PageTitle title={lang === "en" ? "Gallery" : "Галерея"} />
+      <PageTitle
+        title={lang === "en" ? "Gallery" : "Галерея"}
+        description={
+          lang === "en"
+            ? "Gallery of Daria Morozova — batik, painting, decorative art."
+            : "Галерея Дарьи Морозовой — батик, живопись, декоративные работы."
+        }
+      />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

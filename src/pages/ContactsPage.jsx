@@ -118,7 +118,14 @@ export default function ContactsPage({ lang }) {
       ref={ref}
       className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
     >
-      <PageTitle title={lang === "en" ? "Contact" : "Контакты"} />
+      <PageTitle
+        title={lang === "en" ? "Contact" : "Контакты"}
+        description={
+          lang === "en"
+            ? "Contact Daria Morozova — open for commissions and collaborations."
+            : "Связаться с Дарьей Морозовой — открыта к заказам и коллаборациям."
+        }
+      />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />

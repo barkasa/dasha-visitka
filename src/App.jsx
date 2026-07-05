@@ -13,6 +13,7 @@ import ProjectsCategoryPage from "./pages/ProjectsCategoryPage";
 import AboutPage from "./pages/AboutPage";
 import ProjectDetailPage from "./pages/ProjectDetailPage";
 import ScrollToTop from "./components/ScrollToTop";
+import ImpressumPage from "./pages/ImpressumPage";
 function App() {
   const [lang, setLang] = useState("en");
 
@@ -28,6 +29,7 @@ function App() {
         <Route path="/success" element={<SuccessPage lang={lang} />} />
         <Route path="*" element={<NotFoundPage lang={lang} />} />
         <Route path="/about" element={<AboutPage lang={lang} />} />
+        <Route path="/impressum" element={<ImpressumPage lang={lang} />} />
         <Route
           path="/projects/:category/:slug"
           element={<ProjectDetailPage lang={lang} />}
@@ -41,6 +43,7 @@ function App() {
           element={<GalleryCategoryPage lang={lang} />}
         />
       </Routes>
+
       <Footer lang={lang} />
     </div>
   );

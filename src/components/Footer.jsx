@@ -85,8 +85,19 @@ export default function Footer({ lang }) {
         <p className={styles.footerBottomText}>
           © 2026 Daria Morozova. {txt.rights}
         </p>
+        <div style={{ display: "flex", gap: "24px" }}>
+          <Link
+            to="/impressum"
+            className={styles.footerBottomText}
+            style={{ textDecoration: "none" }}
+          >
+            Impressum
+          </Link>
+        </div>
         <p className={styles.footerBottomText}>
-          {lang === "en" ? "Design & Dev — Ivan" : "Дизайн и разработка — Иван"}
+          {lang === "en"
+            ? "Design & Dev — Ivan Morozov"
+            : "Дизайн и разработка — Иван Морозов"}
         </p>
       </div>
     </footer>

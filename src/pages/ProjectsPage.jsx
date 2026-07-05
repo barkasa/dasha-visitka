@@ -12,7 +12,14 @@ export default function ProjectsPage({ lang }) {
       ref={ref}
       className={`${styles.page} fadeIn ${inView ? "visible" : ""}`}
     >
-      <PageTitle title={lang === "en" ? "Projects" : "Проекты"} />
+      <PageTitle
+        title={lang === "en" ? "Projects" : "Проекты"}
+        description={
+          lang === "en"
+            ? "Design projects by Daria Morozova — illustration, graphic design, brand identity."
+            : "Проекты Дарьи Морозовой — иллюстрация, графический дизайн, айдентика."
+        }
+      />
       <div className={styles.inner}>
         <p className={styles.tag}>
           <span className={styles.tagLine} />
