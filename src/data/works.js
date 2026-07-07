@@ -49,6 +49,14 @@ export const projectCategories = {
       "Каталоги, буклеты, плакаты, упаковка, логотипы и технические чертежи.",
     icon: "✦",
   },
+  mural: {
+    titleEn: "Mural & Decoration",
+    titleRu: "Роспись и декорации",
+    descEn: "Wall paintings, interior art, decoration design and film posters.",
+    descRu:
+      "Роспись стен, интерьерное искусство, оформление декораций и плакаты к фильмам.",
+    icon: "🎭",
+  },
 };
 
 // ──────────────────────────────────────
@@ -828,10 +836,11 @@ export const galleryWorks = [
     subRu: "Гипс",
   },
 ];
+// ...............................projectWorks/mozart 1
 
 export const projectWorks = [
   {
-    id: "illustration-1",
+    id: "illustration-Mozart",
     category: "illustration",
     slug: "mozart",
     title: "Mozart",
@@ -839,12 +848,101 @@ export const projectWorks = [
     year: "2023",
     sub: "Book illustration",
     subRu: "Книжная иллюстрация",
-    desc: "A children's illustrated book about Mozart the canary.",
-    descRu: "Детская иллюстрированная книга о канарейке Моцарте.",
-    pages: [],
+    desc: "A children's illustrated book about Mozart the canary. A bilingual book for children, written by Angelika Nikulina, with illustrations and layout design by Daria Morozova.",
+    descRu:
+      "Детская иллюстрированная книга о канарейке Моцарте. Билингвальная книга для детей, автор — Анжелика Никулина, иллюстрации и вёрстка-дизайн — Морозова Дарья.",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
+    pages: [
+      {
+        id: 1,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
+        caption: "Cover",
+        captionRu: "Обложка",
+      },
+      {
+        id: 2,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_1.jpg",
+        caption: "Page 1",
+        captionRu: "Cтраница 1",
+      },
+      {
+        id: 3,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_2.jpg",
+        caption: "Page 16-17",
+        captionRu: "Cтраница 16-17",
+      },
+      {
+        id: 4,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_3.jpg",
+        caption: "Page 8-9",
+        captionRu: "Cтраница 8-9",
+      },
+      {
+        id: 5,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_4.jpg",
+        caption: "Page 6-7",
+        captionRu: "Cтраница 6-7",
+      },
+      {
+        id: 6,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_5.jpg",
+        caption: "Page 42",
+        captionRu: "Cтраница 42",
+      },
+      {
+        id: 7,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_6.jpg",
+        caption: "Page 13",
+        captionRu: "Cтраница 13",
+      },
+      {
+        id: 8,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_7.jpg",
+        caption: "Page 38-39",
+        captionRu: "Cтраница 38-39",
+      },
+      {
+        id: 9,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_8.jpg",
+        caption: "Page 44-45",
+        captionRu: "Cтраница 44-45",
+      },
+      {
+        id: 10,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_9.jpg",
+        caption: "Page 30",
+        captionRu: "Cтраница 30",
+      },
+      {
+        id: 11,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_books%201.jpg",
+        caption: "Book",
+        captionRu: "Книга",
+      },
+      {
+        id: 12,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_D.jpg",
+        // caption: "Book",
+        // captionRu: "Книга",
+      },
+    ],
   },
+  // ...............................mozart 2
   {
-    id: "illustration-2",
+    id: "illustration-Mozart 2",
     category: "illustration",
     slug: "mozart-friends",
     title: "Mozart and His Friends",
@@ -854,8 +952,20 @@ export const projectWorks = [
     subRu: "Книжная иллюстрация",
     desc: "A sequel to Mozart — the canary meets new friends.",
     descRu: "Продолжение истории о канарейке Моцарте и его новых друзьях.",
-    pages: [],
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/cover_mozart2.jpg",
+    pages: [
+      {
+        id: 1,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/cover_mozart2.jpg",
+        caption: "Cover",
+      },
+      { id: 2, image: "https://...page2.jpg", caption: "Page 1" },
+      { id: 3, image: "https://...page3.jpg", caption: "Page 2" },
+    ],
   },
+  // ...............................inner-instincts
   {
     id: "illustration-3",
     category: "illustration",
@@ -870,6 +980,8 @@ export const projectWorks = [
       "Концептуальный проект об инстинктах животных — иллюстрации, открытки, футболки.",
     pages: [],
   },
+
+  // ...............................Graphic Design
   {
     id: "graphic-1",
     category: "graphic",
@@ -923,6 +1035,22 @@ export const projectWorks = [
     year: "2022",
     sub: "Technical",
     subRu: "Технический",
+    pages: [],
+  },
+
+  // ...............................Mural & Decoration
+  {
+    id: "mural-1",
+    category: "mural",
+    slug: "interior-art",
+    title: "Interior Art & Wall Painting",
+    titleRu: "Роспись стен и интерьеры",
+    year: "2023",
+    sub: "Wall painting & Decoration",
+    subRu: "Роспись стен и декорации",
+    desc: "Interior paintings, wall art, decoration design and film poster illustrations.",
+    descRu:
+      "Роспись интерьеров, декоративные стены, оформление декораций и плакаты к фильмам.",
     pages: [],
   },
 ];

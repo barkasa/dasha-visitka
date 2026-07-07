@@ -119,7 +119,9 @@ export default function ProjectDetailPage({ lang }) {
                     <div className={styles.cardPlaceholder}>
                       <span className={styles.cardNum}>{i + 1}</span>
                       <span className={styles.cardCaption}>
-                        {page.caption ||
+                        {(lang === "en"
+                          ? page.caption
+                          : page.captionRu || page.caption) ||
                           (lang === "en"
                             ? `Page ${i + 1}`
                             : `Страница ${i + 1}`)}
@@ -129,7 +131,9 @@ export default function ProjectDetailPage({ lang }) {
                 </div>
                 <div className={styles.cardOverlay}>
                   <span className={styles.cardCaptionHover}>
-                    {page.caption ||
+                    {(lang === "en"
+                      ? page.caption
+                      : page.captionRu || page.caption) ||
                       (lang === "en" ? `Page ${i + 1}` : `Страница ${i + 1}`)}
                   </span>
                 </div>
