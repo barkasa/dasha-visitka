@@ -63,6 +63,8 @@ export const galleryWorks = [
     year: "2010",
     sub: "Still Life with Bottles I",
     subRu: "Натюрморт с бутылками I",
+    available: true,
+    print: true,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_1.jpg",
   },
@@ -74,6 +76,8 @@ export const galleryWorks = [
     year: "2010",
     sub: "Still Life with Bottles II",
     subRu: "Натюрморт с бутылками II",
+    available: false,
+    print: true,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_2.jpg",
   },
@@ -85,6 +89,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Still Life with Bottles III",
     subRu: "Натюрморт с бутылками III",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_3.jpg",
   },
@@ -96,6 +101,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Still Life with Bottles IV",
     subRu: "Натюрморт с бутылками IV",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_4.jpg",
   },
@@ -107,6 +113,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Abstraction",
     subRu: "Абстракция",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_5.jpg",
   },
@@ -118,6 +125,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Houses I",
     subRu: "Дома I",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_6.jpg",
   },
@@ -129,6 +137,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Houses II",
     subRu: "Дома II",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_7.jpg",
   },
@@ -140,6 +149,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Fairytale town I",
     subRu: "Сказочный город I",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_8.jpg",
   },
@@ -151,6 +161,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Fairytale town II",
     subRu: "Сказочный город II",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_9.jpg",
   },
@@ -162,6 +173,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Fairytale town III",
     subRu: "Сказочный город III",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_10.jpg",
   },
@@ -173,6 +185,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Birds",
     subRu: "Птицы",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_11.jpg",
   },
@@ -184,6 +197,7 @@ export const galleryWorks = [
     year: "2010",
     sub: "Street",
     subRu: "Улица",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_12.jpg",
   },
@@ -195,6 +209,7 @@ export const galleryWorks = [
     year: "2009",
     sub: "Music I",
     subRu: "Музыка I",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_13.jpg",
   },
@@ -206,6 +221,7 @@ export const galleryWorks = [
     year: "2009",
     sub: "Music II",
     subRu: "Музыка II",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_14.jpg",
   },
@@ -217,6 +233,7 @@ export const galleryWorks = [
     year: "2011",
     sub: "Meadow grasses",
     subRu: "Луговые травы",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_15.jpg",
   },
@@ -228,6 +245,7 @@ export const galleryWorks = [
     year: "2009",
     sub: "The Virgin Mary",
     subRu: "Дева Мария",
+    available: false,
     image:
       "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/silk%20Batik%201/BK_16.jpg",
   },
@@ -745,6 +763,14 @@ export const galleryWorks = [
     sub: "Hand-painted umbrella",
     subRu: "Роспись зонта",
   },
+
+  /////////////////////////////
+  // { id: 'batik-1', category: 'batik', available: true },
+  // { id: 'batik-2', category: 'batik',  available: true },
+  // { id: 'batik-3', category: 'batik',  available: false }, // уже продана
+
+  //////////////////////
+
   // painting
   {
     id: "painting-1",

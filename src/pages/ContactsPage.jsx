@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import {
   FaWhatsapp,
   FaTelegram,
@@ -113,6 +113,9 @@ export default function ContactsPage({ lang }) {
     },
   ];
   const [ref, inView] = useInView();
+  const [searchParams] = useSearchParams();
+  const subject = searchParams.get("subject") || "";
+  const body = searchParams.get("body") || "";
   return (
     <div
       ref={ref}
@@ -172,6 +175,12 @@ export default function ContactsPage({ lang }) {
             <textarea
               name="message"
               placeholder="Tell me about your project..."
+              defaultValue={
+                body ||
+                (subject
+                  ? `I am interested in "${subject.replace("Original: ", "").replace("Print: ", "")}"\n\n`
+                  : "")
+              }
               rows={5}
               className={`${styles.formTextarea} ${errors.message ? styles.error : ""}`}
               onChange={() => setErrors((e) => ({ ...e, message: "" }))}

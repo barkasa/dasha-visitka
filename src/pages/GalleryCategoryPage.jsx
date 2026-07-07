@@ -131,6 +131,21 @@ function WorkCard({ work, lang, onClick }) {
         )}
       </div>
 
+      {(work.available || work.print) && (
+        <div className={styles.badges}>
+          {work.available && (
+            <span className={`${styles.badge} ${styles.badgeAvailable}`}>
+              {lang === "en" ? "● Available" : "● В наличии"}
+            </span>
+          )}
+          {work.print && (
+            <span className={`${styles.badge} ${styles.badgePrint}`}>
+              {lang === "en" ? "Print" : "Принт"}
+            </span>
+          )}
+        </div>
+      )}
+
       <span className={styles.cardYear}>{work.year}</span>
 
       <div className={styles.cardOverlay}>
@@ -141,6 +156,43 @@ function WorkCard({ work, lang, onClick }) {
           {lang === "en" ? work.sub : work.subRu} · {work.year}
         </span>
       </div>
+
+      {(work.available || work.print) && (
+        <div
+          className={styles.inquireBtns}
+          onClick={(e) => e.stopPropagation()}
+        >
+          {work.available && (
+            <button
+              className={styles.inquireBtn}
+              onClick={(e) => {
+                e.stopPropagation();
+                const imageInfo = work.image
+                  ? `\n\nWork image: ${work.image}`
+                  : "";
+                window.location.href = `/contacts?subject=${encodeURIComponent("Original: " + work.title)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in the original "${work.title}" (${work.year}).\n\nPlease let me know the price and availability.${imageInfo}`)}`;
+              }}
+            >
+              {lang === "en" ? "Buy original →" : "Купить оригинал →"}
+            </button>
+          )}
+
+          {work.print && (
+            <button
+              className={styles.inquireBtnPrint}
+              onClick={(e) => {
+                e.stopPropagation();
+                const imageInfo = work.image
+                  ? `\n\nWork image: ${work.image}`
+                  : "";
+                window.location.href = `/contacts?subject=${encodeURIComponent("Print: " + work.title)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in a print of "${work.title}" (${work.year}).\n\nPlease let me know the available sizes and price.${imageInfo}`)}`;
+              }}
+            >
+              {lang === "en" ? "Order print →" : "Заказать принт →"}
+            </button>
+          )}
+        </div>
+      )}
     </div>
   );
 }
