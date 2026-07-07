@@ -852,91 +852,82 @@ export const projectWorks = [
     descRu:
       "Детская иллюстрированная книга о канарейке Моцарте. Билингвальная книга для детей, автор — Анжелика Никулина, иллюстрации и вёрстка-дизайн — Морозова Дарья.",
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_books%201%202.jpg",
     pages: [
       {
         id: 1,
-        image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
-        caption: "Cover",
-        captionRu: "Обложка",
-      },
-      {
-        id: 2,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_1.jpg",
         caption: "Page 1",
         captionRu: "Cтраница 1",
       },
       {
-        id: 3,
+        id: 2,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_2.jpg",
         caption: "Page 16-17",
         captionRu: "Cтраница 16-17",
       },
       {
-        id: 4,
+        id: 3,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_3.jpg",
         caption: "Page 8-9",
         captionRu: "Cтраница 8-9",
       },
       {
-        id: 5,
+        id: 4,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_4.jpg",
         caption: "Page 6-7",
         captionRu: "Cтраница 6-7",
       },
       {
-        id: 6,
+        id: 5,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_5.jpg",
         caption: "Page 42",
         captionRu: "Cтраница 42",
       },
       {
-        id: 7,
+        id: 6,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_6.jpg",
         caption: "Page 13",
         captionRu: "Cтраница 13",
       },
       {
-        id: 8,
+        id: 7,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_7.jpg",
         caption: "Page 38-39",
         captionRu: "Cтраница 38-39",
       },
       {
-        id: 9,
+        id: 8,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_8.jpg",
         caption: "Page 44-45",
         captionRu: "Cтраница 44-45",
       },
       {
-        id: 10,
+        id: 9,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_9.jpg",
         caption: "Page 30",
         captionRu: "Cтраница 30",
       },
       {
-        id: 11,
+        id: 10,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_books%201.jpg",
-        caption: "Book",
-        captionRu: "Книга",
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
+        caption: "Cover",
+        captionRu: "Обложка",
       },
       {
-        id: 12,
+        id: 11,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_D.jpg",
-        // caption: "Book",
-        // captionRu: "Книга",
       },
     ],
   },
@@ -950,10 +941,11 @@ export const projectWorks = [
     year: "2024",
     sub: "Book illustration",
     subRu: "Книжная иллюстрация",
-    desc: "A sequel to Mozart — the canary meets new friends.",
-    descRu: "Продолжение истории о канарейке Моцарте и его новых друзьях.",
+    desc: "A sequel to Mozart — the canary meets new friends. Written by Angelika Nikulina, with illustrations and layout design by Daria Morozova.",
+    descRu:
+      "Продолжение истории о канарейке Моцарте и его новых друзьях. Автор — Анжелика Никулина, иллюстрации и вёрстка-дизайн — Морозова Дарья.",
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/cover_mozart2.jpg",
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_books%201.jpg",
     pages: [
       {
         id: 1,

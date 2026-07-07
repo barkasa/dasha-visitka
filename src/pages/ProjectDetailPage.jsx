@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import { projectCategories, projectWorks } from "../data/works";
 import Masonry from "react-masonry-css";
@@ -37,6 +37,19 @@ export default function ProjectDetailPage({ lang }) {
     setLightboxIndex(newIndex);
     setLightbox(pages[newIndex]);
   }
+
+  useEffect(() => {
+    if (!lightbox) return;
+
+    function handleKey(e) {
+      if (e.key === "ArrowRight") navLightbox(1);
+      if (e.key === "ArrowLeft") navLightbox(-1);
+      if (e.key === "Escape") setLightbox(null);
+    }
+
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  }, [lightbox, lightboxIndex]);
 
   return (
     <div className={styles.page}>

@@ -232,7 +232,12 @@
   transition: all 0.2s;
   border-radius: 2px;
 }
-
+.lightboxNav:disabled {
+  opacity: 0.2;
+  cursor: default;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
+}
 .lightboxNav:hover {
   border-color: var(--warm);
   color: var(--warm);
