@@ -917,15 +917,51 @@ export const projectWorks = [
         caption: "Page 30",
         captionRu: "Cтраница 30",
       },
+
       {
         id: 10,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_10.jpg",
+        caption: "Page 14-15",
+        captionRu: "Cтраница 14-15",
+      },
+      {
+        id: 11,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_11.jpg",
+        caption: "Page 28-29",
+        captionRu: "Cтраница 28-29",
+      },
+      {
+        id: 12,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_12.jpg",
+        caption: "Page 50",
+        captionRu: "Cтраница 50",
+      },
+      {
+        id: 13,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_13.jpg",
+        caption: "Page 34-35",
+        captionRu: "Cтраница 34-35",
+      },
+      {
+        id: 14,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_14.jpg",
+        caption: "Page 26-27",
+        captionRu: "Cтраница 26-27",
+      },
+      {
+        id: 15,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
         caption: "Cover",
         captionRu: "Обложка",
       },
       {
-        id: 11,
+        id: 16,
         image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_D.jpg",
       },
@@ -950,11 +986,108 @@ export const projectWorks = [
       {
         id: 1,
         image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_2.jpg",
+        caption: "Page 28",
+        captionRu: "Cтраница 28",
+      },
+      {
+        id: 2,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_1.jpg",
+        caption: "Page 2-3",
+        captionRu: "Cтраница 2-3",
+      },
+      {
+        id: 3,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_3.jpg",
+        caption: "Page 22-23",
+        captionRu: "Cтраница 22-23",
+      },
+      {
+        id: 4,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_5.jpg",
+        caption: "Page 31",
+        captionRu: "Cтраница 31",
+      },
+      {
+        id: 5,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_4.jpg",
+        caption: "Page 36-37",
+        captionRu: "Cтраница 36-37",
+      },
+      {
+        id: 6,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_7.jpg",
+        caption: "Page 20-21",
+        captionRu: "Cтраница 20-21",
+      },
+      {
+        id: 7,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_13.jpg",
+        caption: "Page 17",
+        captionRu: "Cтраница 17",
+      },
+      {
+        id: 8,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_9.jpg",
+        caption: "Page 32-33",
+        captionRu: "Cтраница 32-33",
+      },
+      {
+        id: 9,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_10.jpg",
+        caption: "Page 6-7",
+        captionRu: "Cтраница 6-7",
+      },
+      {
+        id: 10,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_11.jpg",
+        caption: "Page 9",
+        captionRu: "Cтраница 9",
+      },
+      {
+        id: 11,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_8.jpg",
+        caption: "Page 38",
+        captionRu: "Cтраница 38",
+      },
+      {
+        id: 12,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_12.jpg",
+        caption: "Page 44-45",
+        captionRu: "Cтраница 44-45",
+      },
+      {
+        id: 13,
+        image:
           "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/cover_mozart2.jpg",
         caption: "Cover",
+        captionRu: "Обложка",
       },
-      { id: 2, image: "https://...page2.jpg", caption: "Page 1" },
-      { id: 3, image: "https://...page3.jpg", caption: "Page 2" },
+      {
+        id: 14,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart_books.jpg",
+        caption: "Books",
+        captionRu: "Книги",
+      },
+      {
+        id: 15,
+        image:
+          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart_lesezeichen.jpg",
+        caption: "Lesezeichen",
+        captionRu: "Закладка",
+      },
     ],
   },
   // ...............................inner-instincts
