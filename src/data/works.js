@@ -761,6 +761,8 @@ export const galleryWorks = [
     year: "2024",
     sub: "Hand-painted umbrella",
     subRu: "Роспись зонта",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Umbrella/Umb_1.jpg",
   },
   {
     id: "umbrella-2",
@@ -1103,6 +1105,8 @@ export const projectWorks = [
     desc: "A concept project exploring animal instincts through illustration, postcards and apparel.",
     descRu:
       "Концептуальный проект об инстинктах животных — иллюстрации, открытки, футболки.",
+    image:
+      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_books%201.jpg",
     pages: [],
   },
 
