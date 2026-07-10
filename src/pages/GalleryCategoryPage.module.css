@@ -119,6 +119,7 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 24px;
+  padding-bottom: 36px;
 }
 
 .card:hover .cardOverlay {

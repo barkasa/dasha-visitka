@@ -79,18 +79,18 @@ export default function GalleryCategoryPage({ lang }) {
 
             <div className={styles.lightboxInfo}>
               <h2 className={styles.lightboxTitle}>
-                {lang === "en" ? lightbox.title : lightbox.titleRu}
+                {lang === "en" ? data.titleEn : data.titleRu}
               </h2>
 
               {[
                 [lang === "en" ? "Year" : "Год", lightbox.year],
                 [
-                  lang === "en" ? "Medium" : "Техника",
+                  lang === "en" ? "Name" : "Название",
                   lang === "en" ? lightbox.sub : lightbox.subRu,
                 ],
                 [
-                  lang === "en" ? "Series" : "Серия",
-                  lang === "en" ? data.titleEn : data.titleRu,
+                  lang === "en" ? "Medium" : "Техника",
+                  lang === "en" ? lightbox.title : lightbox.titleRu,
                 ],
               ].map(([label, val]) => (
                 <div key={label} className={styles.lightboxRow}>
@@ -150,11 +150,8 @@ function WorkCard({ work, lang, onClick }) {
 
       <div className={styles.cardOverlay}>
         <h3 className={styles.cardTitle}>
-          {lang === "en" ? work.title : work.titleRu}
+          {lang === "en" ? work.sub : work.subRu}
         </h3>
-        <span className={styles.cardSub}>
-          {lang === "en" ? work.sub : work.subRu} · {work.year}
-        </span>
       </div>
 
       {(work.available || work.print) && (
