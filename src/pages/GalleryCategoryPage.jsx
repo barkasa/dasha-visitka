@@ -42,8 +42,9 @@ export default function GalleryCategoryPage({ lang }) {
           breakpointCols={{
             default: 3,
             1024: 3,
-            768: 2,
-            480: 2,
+            768: 2, // 768px → 2 колонки
+            600: 2, // 600px → 2 колонки (добавил для плавности)
+            480: 1,
           }}
           className={styles.masonryGrid}
           columnClassName={styles.masonryColumn}
@@ -138,11 +139,6 @@ function WorkCard({ work, lang, onClick }) {
               {lang === "en" ? "● Available" : "● В наличии"}
             </span>
           )}
-          {work.print && (
-            <span className={`${styles.badge} ${styles.badgePrint}`}>
-              {lang === "en" ? "Print" : "Принт"}
-            </span>
-          )}
         </div>
       )}
 
@@ -167,7 +163,8 @@ function WorkCard({ work, lang, onClick }) {
                 const imageInfo = work.image
                   ? `\n\nWork image: ${work.image}`
                   : "";
-                window.location.href = `/contacts?subject=${encodeURIComponent("Original: " + work.title)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in the original "${work.title}" (${work.year}).\n\nPlease let me know the price and availability.${imageInfo}`)}`;
+                // window.location.href = `/contacts?subject=${encodeURIComponent("Original: " + work.title)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in the original "${work.title}" (${work.year}).\n\nPlease let me know the price and availability.${imageInfo}`)}`;
+                window.location.href = `/contacts?subject=${encodeURIComponent("Original: " + work.sub)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in the original "${work.sub}" (${work.year}).\n\nPlease let me know the price and availability.${imageInfo}`)}`;
               }}
             >
               {lang === "en" ? "Buy original →" : "Купить оригинал →"}
@@ -182,7 +179,7 @@ function WorkCard({ work, lang, onClick }) {
                 const imageInfo = work.image
                   ? `\n\nWork image: ${work.image}`
                   : "";
-                window.location.href = `/contacts?subject=${encodeURIComponent("Print: " + work.title)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in a print of "${work.title}" (${work.year}).\n\nPlease let me know the available sizes and price.${imageInfo}`)}`;
+                window.location.href = `/contacts?subject=${encodeURIComponent("Print: " + work.sub)}&body=${encodeURIComponent(`Hello Daria,\n\nI am interested in a print of "${work.sub}" (${work.year}).\n\nPlease let me know the available sizes and price.${imageInfo}`)}`;
               }}
             >
               {lang === "en" ? "Order print →" : "Заказать принт →"}
