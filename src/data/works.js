@@ -16,6 +16,24 @@ export const galleryCategories = {
       "Зонты ручной росписи — уникальные произведения искусства для дождливых дней.",
     icon: "☂️",
   },
+  umbrella: {
+    // ← НОВАЯ КАТЕГОРИЯ
+    titleEn: "Umbrella Painting",
+    titleRu: "Роспись зонтов",
+    descEn: "Hand-painted umbrellas — unique works of art for rainy days.",
+    descRu:
+      "Зонты ручной росписи — уникальные произведения искусства для дождливых дней.",
+    icon: "☂️",
+  },
+  fashion: {
+    titleEn: "Wearable Art",
+    titleRu: "Одежда как искусство",
+    descEn:
+      "Hand-painted clothing and accessories — scarves, wraps, ponchos and unique wearable pieces where fashion meets fine art.",
+    descRu:
+      "Расписанная вручную одежда и аксессуары — платки, накидки, пончо и уникальные вещи на стыке моды и искусства.",
+    icon: "👘",
+  },
   painting: {
     titleEn: "Painting",
     titleRu: "Живопись",
@@ -74,7 +92,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_1_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033924/mDaria/batik/BK_1_g.webp",
   },
   {
     id: "batik-2",
@@ -87,7 +105,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_2_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033935/mDaria/batik/BK_2_g.webp",
   },
   {
     id: "batik-3",
@@ -100,7 +118,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_3_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033946/mDaria/batik/BK_3_v.webp",
   },
   {
     id: "batik-4",
@@ -113,7 +131,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_4_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033957/mDaria/batik/BK_4_g.webp",
   },
   {
     id: "batik-5",
@@ -126,7 +144,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_5_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033974/mDaria/batik/BK_5_k.webp",
   },
   {
     id: "batik-6",
@@ -139,7 +157,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_6_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033980/mDaria/batik/BK_6_k.webp",
   },
   {
     id: "batik-7",
@@ -152,7 +170,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_7_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033981/mDaria/batik/BK_7_g.webp",
   },
   {
     id: "batik-8",
@@ -165,7 +183,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_8_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033982/mDaria/batik/BK_8_v.webp",
   },
   {
     id: "batik-9",
@@ -178,7 +196,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_9_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033983/mDaria/batik/BK_9_k.webp",
   },
   {
     id: "batik-10",
@@ -191,7 +209,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_10_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784030919/mDaria/batik/BK_10_k.webp",
   },
   {
     id: "batik-11",
@@ -204,7 +222,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_11_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784030920/mDaria/batik/BK_11_g.webp",
   },
   {
     id: "batik-12",
@@ -217,7 +235,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_12_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784030921/mDaria/batik/BK_12_k.webp",
   },
   {
     id: "batik-13",
@@ -230,7 +248,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_13_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784030921/mDaria/batik/BK_13_v.webp",
   },
   {
     id: "batik-14",
@@ -243,7 +261,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_14_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784030922/mDaria/batik/BK_14_k.webp",
   },
   {
     id: "batik-15",
@@ -256,7 +274,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_15_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033921/mDaria/batik/BK_15_k.webp",
   },
   {
     id: "batik-16",
@@ -269,7 +287,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_16_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033922/mDaria/batik/BK_16_v.webp",
   },
   {
     id: "batik-17",
@@ -282,7 +300,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_17_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033923/mDaria/batik/BK_17_g.webp",
   },
   {
     id: "batik-18",
@@ -295,20 +313,20 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_18_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033923/mDaria/batik/BK_18_k.webp",
   },
   {
     id: "batik-19",
     category: "batik",
     title: "Silk Batik",
     titleRu: "Батик на шёлке",
-    year: "2010",
-    sub: "Faces of Time",
-    subRu: "Лица времени",
+    year: "2008",
+    sub: "City on the Water",
+    subRu: "Город на воде",
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_54_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033979/mDaria/batik/BK_19_g.webp",
   },
   {
     id: "batik-20",
@@ -321,7 +339,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_20_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033979/mDaria/batik/BK_19_g.webp",
   },
   {
     id: "batik-21",
@@ -334,7 +352,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_21_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033926/mDaria/batik/BK_21_v.webp",
   },
   {
     id: "batik-22",
@@ -347,7 +365,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_22_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033927/mDaria/batik/BK_22_k.webp",
   },
   {
     id: "batik-23",
@@ -360,7 +378,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_23_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033928/mDaria/batik/BK_23_v.webp",
   },
   {
     id: "batik-24",
@@ -373,7 +391,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_24_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033929/mDaria/batik/BK_24_v.webp",
   },
   {
     id: "batik-25",
@@ -386,7 +404,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_25_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033930/mDaria/batik/BK_25_g.webp",
   },
   {
     id: "batik-26",
@@ -399,7 +417,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_26_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033931/mDaria/batik/BK_26_k.webp",
   },
   {
     id: "batik-27",
@@ -412,7 +430,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_27_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033932/mDaria/batik/BK_27_v.webp",
   },
   {
     id: "batik-28",
@@ -425,7 +443,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_28_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033933/mDaria/batik/BK_28_v.webp",
   },
   {
     id: "batik-29",
@@ -438,7 +456,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_29_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033934/mDaria/batik/BK_29_k.webp",
   },
   {
     id: "batik-30",
@@ -451,7 +469,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_30_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033936/mDaria/batik/BK_30_g.webp",
   },
   {
     id: "batik-31",
@@ -464,7 +482,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_31_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033937/mDaria/batik/BK_31_v.webp",
   },
   {
     id: "batik-32",
@@ -477,7 +495,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_32_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033938/mDaria/batik/BK_32_v.webp",
   },
   {
     id: "batik-33",
@@ -490,7 +508,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_33_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033939/mDaria/batik/BK_33_g.webp",
   },
   {
     id: "batik-34",
@@ -503,7 +521,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_34_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033940/mDaria/batik/BK_34_v.webp",
   },
   {
     id: "batik-35",
@@ -516,7 +534,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_35_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033941/mDaria/batik/BK_35_k.webp",
   },
   {
     id: "batik-36",
@@ -529,7 +547,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_36_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033942/mDaria/batik/BK_36_v.webp",
   },
   {
     id: "batik-37",
@@ -542,7 +560,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_37_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033943/mDaria/batik/BK_37_v.webp",
   },
   {
     id: "batik-38",
@@ -555,7 +573,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_38_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033944/mDaria/batik/BK_38_k.webp",
   },
   {
     id: "batik-39",
@@ -568,7 +586,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_39_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033945/mDaria/batik/BK_39_v.webp",
   },
   {
     id: "batik-40",
@@ -581,7 +599,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_40_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033947/mDaria/batik/BK_40_v.webp",
   },
   {
     id: "batik-41",
@@ -594,7 +612,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_41_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033948/mDaria/batik/BK_41_g.webp",
   },
   {
     id: "batik-42",
@@ -607,7 +625,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_42_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033949/mDaria/batik/BK_42_v.webp",
   },
   {
     id: "batik-43",
@@ -620,7 +638,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_43_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033950/mDaria/batik/BK_43_v.webp",
   },
   {
     id: "batik-44",
@@ -633,7 +651,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_44_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033951/mDaria/batik/BK_44_k.webp",
   },
   {
     id: "batik-45",
@@ -646,7 +664,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_45_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033952/mDaria/batik/BK_45_v.webp",
   },
   {
     id: "batik-46",
@@ -659,7 +677,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_46_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033953/mDaria/batik/BK_46_v.webp",
   },
   {
     id: "batik-47",
@@ -672,7 +690,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_47_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033954/mDaria/batik/BK_47_k.webp",
   },
   {
     id: "batik-48",
@@ -685,12 +703,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_48_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033955/mDaria/batik/BK_48_v.webp",
   },
   {
     id: "batik-49",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "Fairytale town IV",
@@ -698,12 +716,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_49_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033956/mDaria/batik/BK_49_k.webp",
   },
   {
     id: "batik-50",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "City of Evening Lights",
@@ -711,12 +729,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_50_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033958/mDaria/batik/BK_50_v.webp",
   },
   {
     id: "batik-51",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2009",
     sub: "Night Flowers",
@@ -724,7 +742,7 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_51_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033959/mDaria/batik/BK_51_v.webp",
   },
   {
     id: "batik-52",
@@ -737,12 +755,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_52_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033960/mDaria/batik/BK_52_g.webp",
   },
   {
     id: "batik-53",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2013",
     sub: "City of Kindness",
@@ -750,12 +768,25 @@ export const galleryWorks = [
     available: true,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_53_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033961/mDaria/batik/BK_53_k.webp",
   },
   {
     id: "batik-54",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
+    titleRu: "Батик на шёлке",
+    year: "2010",
+    sub: "Behind the Mask",
+    subRu: "За маской",
+    available: false,
+    print: true,
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033968/mDaria/batik/BK_54_v.webp",
+  },
+  {
+    id: "batik-55",
+    category: "batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2007",
     sub: "Enchanted Forest",
@@ -763,26 +794,26 @@ export const galleryWorks = [
     available: true,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_55_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033969/mDaria/batik/BK_55_v.webp",
   },
   {
-    id: "batik-55",
+    id: "batik-56",
 
     category: "batik",
-    ttitle: "Painting on Fabric",
-    ttitleRu: "Роспись на ткани",
+    title: "Painting on Fabric",
+    titleRu: "Роспись на ткани",
     year: "2021",
     sub: "Lantern. Seascape",
     subRu: "Светильник. Морской пейзаж",
     available: true,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_56_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033970/mDaria/batik/BK_56_g.webp",
   },
   {
-    id: "batik-56",
+    id: "batik-57",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2008",
     sub: "Masquerade I",
@@ -790,12 +821,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_57_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033971/mDaria/batik/BK_57_g.webp",
   },
   {
-    id: "batik-57",
+    id: "batik-58",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "The Flower of Ivan",
@@ -803,12 +834,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_58_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033972/mDaria/batik/BK_58_v.webp",
   },
   {
-    id: "batik-58",
+    id: "batik-59",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "The Masks",
@@ -816,12 +847,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_59_k.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033972/mDaria/batik/BK_58_v.webp",
   },
   {
-    id: "batik-59",
+    id: "batik-60",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2018",
     sub: "Enchanted Forest",
@@ -829,12 +860,12 @@ export const galleryWorks = [
     available: true,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_60_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033975/mDaria/batik/BK_60_v.webp",
   },
   {
-    id: "batik-60",
+    id: "batik-61",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "Fairytale town V",
@@ -842,12 +873,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_61_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033975/mDaria/batik/BK_61_v.webp",
   },
   {
-    id: "batik-61",
+    id: "batik-62",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2008",
     sub: "Masquerade II",
@@ -855,12 +886,12 @@ export const galleryWorks = [
     available: true,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_62_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033976/mDaria/batik/BK_62_g.webp",
   },
   {
-    id: "batik-62",
+    id: "batik-63",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2008",
     sub: "The Emerald City",
@@ -868,12 +899,12 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_63_g.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033977/mDaria/batik/BK_63_g.webp",
   },
   {
-    id: "batik-63",
+    id: "batik-64",
     category: "batik",
-    ttitle: "Silk Batik",
+    title: "Silk Batik",
     titleRu: "Батик на шёлке",
     year: "2010",
     sub: "Dandelions",
@@ -881,41 +912,461 @@ export const galleryWorks = [
     available: false,
     print: true,
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_64_v.webp",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784033977/mDaria/batik/BK_63_g.webp",
   },
-  {
-    id: "batik-64",
-    category: "batik",
-    ttitle: "Silk Batik",
-    titleRu: "Батик на шёлке",
-    year: "2008",
-    sub: "City on the Water",
-    subRu: "Город на воде",
-    available: false,
-    print: true,
-    image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Batik_picture/BK_65_g.webp",
-  },
+
   // РОСПИСЬ ЗОНТОВ
   {
     id: "umbrella-1",
     category: "umbrella",
-    title: "Umbrella I",
-    titleRu: "Зонт I",
-    year: "2024",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
     sub: "Hand-painted umbrella",
     subRu: "Роспись зонта",
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/Umbrella/Umb_1.jpg",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044597/mDaria/umbrella/Um_g_1.webp",
   },
   {
     id: "umbrella-2",
     category: "umbrella",
-    title: "Umbrella II",
-    titleRu: "Зонт II",
-    year: "2024",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
     sub: "Hand-painted umbrella",
     subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044613/mDaria/umbrella/Um_k_2.webp",
+  },
+  {
+    id: "umbrella-3",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044632/mDaria/umbrella/Um_v_3.webp",
+  },
+  {
+    id: "umbrella-4",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044599/mDaria/umbrella/Um_g_4.webp",
+  },
+  {
+    id: "umbrella-5",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044616/mDaria/umbrella/Um_k_5.webp",
+  },
+  {
+    id: "umbrella-6",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044601/mDaria/umbrella/Um_g_6.webp",
+  },
+  {
+    id: "umbrella-7",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044635/mDaria/umbrella/Um_v_7.webp",
+  },
+  {
+    id: "umbrella-8",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044637/mDaria/umbrella/Um_v_8.webp",
+  },
+  {
+    id: "umbrella-9",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044618/mDaria/umbrella/Um_k_9.webp",
+  },
+  {
+    id: "umbrella-10",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044641/mDaria/umbrella/Um_v_10.webp",
+  },
+  {
+    id: "umbrella-11",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044603/mDaria/umbrella/Um_g_11.webp",
+  },
+  {
+    id: "umbrella-12",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044605/mDaria/umbrella/Um_g_12.webp",
+  },
+  {
+    id: "umbrella-13",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044620/mDaria/umbrella/Um_k_13.webp",
+  },
+  {
+    id: "umbrella-14",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044642/mDaria/umbrella/Um_v_14.webp",
+  },
+  {
+    id: "umbrella-15",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044646/mDaria/umbrella/Um_v_15.webp",
+  },
+  {
+    id: "umbrella-16",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044606/mDaria/umbrella/Um_g_16.webp",
+  },
+  {
+    id: "umbrella-17",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044648/mDaria/umbrella/Um_v_17.webp",
+  },
+  {
+    id: "umbrella-18",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044622/mDaria/umbrella/Um_k_18.webp",
+  },
+  {
+    id: "umbrella-19",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044625/mDaria/umbrella/Um_k_19.webp",
+  },
+  {
+    id: "umbrella-20",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044609/mDaria/umbrella/Um_g_20.webp",
+  },
+  {
+    id: "umbrella-21",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044627/mDaria/umbrella/Um_k_21.webp",
+  },
+  {
+    id: "umbrella-22",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044630/mDaria/umbrella/Um_k_22.webp",
+  },
+  {
+    id: "umbrella-23",
+    category: "umbrella",
+    title: "Umbrella",
+    titleRu: "Зонт",
+    year: "2013",
+    sub: "Hand-painted umbrella",
+    subRu: "Роспись зонта",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044611/mDaria/umbrella/Um_g_23.webp",
+  },
+
+  //fashion
+  {
+    id: "fashion-1",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044711/mDaria/batik_clothing/Batik_clothing_1_g.webp",
+  },
+  {
+    id: "fashion-2",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044712/mDaria/batik_clothing/Batik_clothing_2_g.webp",
+  },
+
+  {
+    id: "fashion-3",
+    category: "fashion",
+    title: "Silk Headscarf",
+    titleRu: "Шёлковый платок",
+    sub: "Hand-painted silk Headscarf",
+    subRu: "Расписной шёлковый платок",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044715/mDaria/batik_clothing/Batik_clothing_3_k.webp",
+  },
+
+  {
+    id: "fashion-4",
+    category: "fashion",
+    title: "Behind the Scenes",
+    titleRu: "В процессе работы",
+    sub: "Artist at work — fabric painting",
+    subRu: "Художник за работой — роспись ткани",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044717/mDaria/batik_clothing/Batik_clothing_4_v.webp",
+  },
+
+  {
+    id: "fashion-5",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044719/mDaria/batik_clothing/Batik_clothing_5_v.webp",
+  },
+  {
+    id: "fashion-6",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044721/mDaria/batik_clothing/Batik_clothing_6_k.webp",
+  },
+  {
+    id: "fashion-7",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044723/mDaria/batik_clothing/Batik_clothing_7_v.webp",
+  },
+  {
+    id: "fashion-8",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044726/mDaria/batik_clothing/Batik_clothing_8_v.webp",
+  },
+  {
+    id: "fashion-9",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044728/mDaria/batik_clothing/Batik_clothing_9_k.webp",
+  },
+  {
+    id: "fashion-10",
+    category: "fashion",
+    title: "Blanket",
+    titleRu: "Одеяло",
+    sub: "Hand-painted blanket",
+    subRu: "Расписное одеяло",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044730/mDaria/batik_clothing/Batik_clothing_10_k.webp",
+  },
+  {
+    id: "fashion-11",
+    category: "fashion",
+    title: "Skirt",
+    titleRu: "Юбка",
+    sub: "Hand-painted skirt",
+    subRu: "Расписная юбка",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044732/mDaria/batik_clothing/Batik_clothing_11_g.webp",
+  },
+  {
+    id: "fashion-12",
+    category: "fashion",
+    title: "Skirt",
+    titleRu: "Юбка",
+    sub: "Hand-painted skirt",
+    subRu: "Расписная юбка",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044735/mDaria/batik_clothing/Batik_clothing_12_v.webp",
+  },
+  {
+    id: "fashion-13",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044737/mDaria/batik_clothing/Batik_clothing_13_v.webp",
+  },
+  {
+    id: "fashion-14",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044740/mDaria/batik_clothing/Batik_clothing_14_g.webp",
+  },
+  {
+    id: "fashion-15",
+    category: "fashion",
+    title: "Poncho",
+    titleRu: "Пончо",
+    sub: "Hand-painted poncho",
+    subRu: "Расписное пончо",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044743/mDaria/batik_clothing/Batik_clothing_15_v.webp",
+  },
+  {
+    id: "fashion-16",
+    category: "fashion",
+    title: "Silk Headscarf",
+    titleRu: "Шёлковый платок",
+    sub: "Hand-painted silk Headscarf",
+    subRu: "Расписной шёлковый платок",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044745/mDaria/batik_clothing/Batik_clothing_16_k.webp",
+  },
+
+  {
+    id: "fashion-17",
+    category: "fashion",
+    title: "Silk Headscarf",
+    titleRu: "Шёлковый платок",
+    sub: "Hand-painted silk Headscarf",
+    subRu: "Расписной шёлковый платок",
+
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044747/mDaria/batik_clothing/Batik_clothing_17_k.webp",
+  },
+  {
+    id: "fashion-18",
+    category: "fashion",
+    title: "Scarf",
+    titleRu: "Шарф",
+    sub: "Hand-painted scarf",
+    subRu: "Расписной шарф",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044751/mDaria/batik_clothing/Batik_clothing_18_v.webp",
+  },
+  {
+    id: "fashion-19",
+    category: "fashion",
+
+    title: "Jeans",
+    titleRu: "Джинсы",
+    sub: "Hand-painted jeans",
+    subRu: "Расписные джинсы",
+    image:
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044753/mDaria/batik_clothing/Batik_clothing_19_g.webp",
   },
 
   /////////////////////////////
@@ -998,68 +1449,69 @@ export const projectWorks = [
     descRu:
       "Детская иллюстрированная книга о канарейке Моцарте. Билингвальная книга для детей, автор — Анжелика Никулина, иллюстрации и вёрстка-дизайн — Морозова Дарья.",
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_books%201%202.jpg",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784034131/mDaria/mozart/mozart_books_1_2.webp",
+
     pages: [
       {
         id: 1,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_1.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034120/mDaria/mozart/mozart_1v.webp",
         caption: "Page 1",
         captionRu: "Cтраница 1",
       },
       {
         id: 2,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_2.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034121/mDaria/mozart/mozart_2g.webp",
         caption: "Page 16-17",
         captionRu: "Cтраница 16-17",
       },
       {
         id: 3,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_3.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034122/mDaria/mozart/mozart_3g.webp",
         caption: "Page 8-9",
         captionRu: "Cтраница 8-9",
       },
       {
         id: 4,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_4.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034122/mDaria/mozart/mozart_4k.webp",
         caption: "Page 6-7",
         captionRu: "Cтраница 6-7",
       },
       {
         id: 5,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_5.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034124/mDaria/mozart/mozart_5v.webp",
         caption: "Page 42",
         captionRu: "Cтраница 42",
       },
       {
         id: 6,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_6.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034127/mDaria/mozart/mozart_6k.webp",
         caption: "Page 13",
         captionRu: "Cтраница 13",
       },
       {
         id: 7,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_7.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034128/mDaria/mozart/mozart_7g.webp",
         caption: "Page 38-39",
         captionRu: "Cтраница 38-39",
       },
       {
         id: 8,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_8.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034129/mDaria/mozart/mozart_8g.webp",
         caption: "Page 44-45",
         captionRu: "Cтраница 44-45",
       },
       {
         id: 9,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_9.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034130/mDaria/mozart/mozart_9v.webp",
         caption: "Page 30",
         captionRu: "Cтраница 30",
       },
@@ -1067,49 +1519,56 @@ export const projectWorks = [
       {
         id: 10,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_10.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034115/mDaria/mozart/mozart_10g.webp",
         caption: "Page 14-15",
         captionRu: "Cтраница 14-15",
       },
       {
         id: 11,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_11.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034116/mDaria/mozart/mozart_11k.webp",
         caption: "Page 28-29",
         captionRu: "Cтраница 28-29",
       },
       {
         id: 12,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_12.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034117/mDaria/mozart/mozart_12v.webp",
         caption: "Page 50",
         captionRu: "Cтраница 50",
       },
       {
         id: 13,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_13.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034118/mDaria/mozart/mozart_13g.webp",
         caption: "Page 34-35",
         captionRu: "Cтраница 34-35",
       },
       {
         id: 14,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_14.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034119/mDaria/mozart/mozart_14g.webp",
         caption: "Page 26-27",
         captionRu: "Cтраница 26-27",
       },
       {
         id: 15,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/cover_mozart.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034114/mDaria/mozart/cover_mozart_g.webp",
         caption: "Cover",
         captionRu: "Обложка",
       },
       {
         id: 16,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart/mozart_D.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034132/mDaria/mozart/mozart_books_1_v.webp",
+        caption: "Cover",
+        captionRu: "Обложка",
+      },
+      {
+        id: 17,
+        image:
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784034133/mDaria/mozart/mozart_D_v.webp",
       },
     ],
   },
@@ -1127,110 +1586,110 @@ export const projectWorks = [
     descRu:
       "Продолжение истории о канарейке Моцарте и его новых друзьях. Автор — Анжелика Никулина, иллюстрации и вёрстка-дизайн — Морозова Дарья.",
     image:
-      "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_books%201.jpg",
+      "https://res.cloudinary.com/drljkxff1/image/upload/v1784044308/mDaria/mozart_2/mozart_2_books_1_g.webp",
     pages: [
       {
         id: 1,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_2.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044289/mDaria/mozart_2/mozart_2_1_k.webp",
         caption: "Page 28",
         captionRu: "Cтраница 28",
       },
       {
         id: 2,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_1.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044317/mDaria/mozart_2/mozart_2_2_g.webp",
         caption: "Page 2-3",
         captionRu: "Cтраница 2-3",
       },
       {
         id: 3,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_3.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044290/mDaria/mozart_2/mozart_2_3_g.webp",
         caption: "Page 22-23",
         captionRu: "Cтраница 22-23",
       },
       {
         id: 4,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_5.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044292/mDaria/mozart_2/mozart_2_4_g.webp",
         caption: "Page 31",
         captionRu: "Cтраница 31",
       },
       {
         id: 5,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_4.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044293/mDaria/mozart_2/mozart_2_6_v.webp",
         caption: "Page 36-37",
         captionRu: "Cтраница 36-37",
       },
       {
         id: 6,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_7.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044296/mDaria/mozart_2/mozart_2_7_g.webp",
         caption: "Page 20-21",
         captionRu: "Cтраница 20-21",
       },
       {
         id: 7,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_13.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044297/mDaria/mozart_2/mozart_2_8_k.webp",
         caption: "Page 17",
         captionRu: "Cтраница 17",
       },
       {
         id: 8,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_9.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044299/mDaria/mozart_2/mozart_2_9_g.webp",
         caption: "Page 32-33",
         captionRu: "Cтраница 32-33",
       },
       {
         id: 9,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_10.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044300/mDaria/mozart_2/mozart_2_10_g.webp",
         caption: "Page 6-7",
         captionRu: "Cтраница 6-7",
       },
       {
         id: 10,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_11.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044302/mDaria/mozart_2/mozart_2_11_k.webp",
         caption: "Page 9",
         captionRu: "Cтраница 9",
       },
       {
         id: 11,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_8.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044304/mDaria/mozart_2/mozart_2_12_g.webp",
         caption: "Page 38",
         captionRu: "Cтраница 38",
       },
       {
         id: 12,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart%202_12.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044306/mDaria/mozart_2/mozart_2_13_v.webp",
         caption: "Page 44-45",
         captionRu: "Cтраница 44-45",
       },
       {
         id: 13,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/cover_mozart2.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044315/mDaria/mozart_2/cover_mozart2_g.webp",
         caption: "Cover",
         captionRu: "Обложка",
       },
       {
         id: 14,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart_books.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044310/mDaria/mozart_2/mozart_books_k.webp",
         caption: "Books",
         captionRu: "Книги",
       },
       {
         id: 15,
         image:
-          "https://kfkzcuqao3n7ppvh.public.blob.vercel-storage.com/illustration%20books/mozart%202/mozart_lesezeichen.jpg",
+          "https://res.cloudinary.com/drljkxff1/image/upload/v1784044313/mDaria/mozart_2/mozart_lesezeichen_v.webp",
         caption: "Lesezeichen",
         captionRu: "Закладка",
       },
